@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exp6</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+      <div class="container-fluid">
+          <div class="jumbotron"> <h4>Filtros de pertinência e Filtros de Suporte</h4> </div>
+
+          <ul class="nav nav-tabs nav-justified">
+              <li class="active"><a href="#t61" data-toggle="tab">Bases binarias</a></li>
+              <li><a href="#t62" data-toggle="tab">Bases de multiplas classes</a></li>
+          </ul>
+
+          <div class="tab-content">
+              <div class="tab-pane active" id="t61">
+                <div class="container-fluid">
+
+                    <div class="col-md-5"> <img src="images/Exp6StartPoint.png" alt="" /> </div>
+                    <div class="col-md-7"> <img src="images/Exp6BinAcNr.png" alt="" /> </div>
+
+                    <div class="row">
+                        <iframe width="900" height="450" frameborder="0" src = 'exp6binac.html' class="center-block"></iframe>
+                    </div>
+
+                    <div class="row">
+                        <iframe width="900" height="450" frameborder="0" src = 'exp6binnr.html' class="center-block"></iframe>
+                    </div>
+
+                    <div class="page-header">
+                          <h1> <small>Teste de Friedman e Holm</small></h1>
+                    </div>
+
+                    <div class="col-md-4">  </div>
+                    <div class="col-md-4 center-block"> <p class="text-success bg-success">Acurácias</p> <br> <img src="images/Exp6BinFriedmanAc.png" class="thumbnail" width="400"/> </div>
+                    <div class="col-md-4"> <p class="text-success bg-success"> Número de regras</p> <br> <img src="images/Exp6BinFriedmanNr.png" class="thumbnail" width="400"/> </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane active" id="t62">
+                <div class="container-fluid">
+                    <div class="col-md-5"> <img src="images/Exp6StartPoint.png" alt="" /> </div>
+                    <div class="col-md-7"> <img src="images/Exp6MultiAcNr.png" alt="" /> </div>
+
+                    <div class="row">
+                        <iframe width="900" height="450" frameborder="0" src = 'exp6multiac.html' class="center-block"></iframe>
+                    </div>
+
+                    <div class="row">
+                        <iframe width="900" height="450" frameborder="0" src = 'exp6multinr.html' class="center-block"></iframe>
+                    </div>
+
+                    <div class="page-header">
+                        <h1> <small>Teste de Friedman e Holm</small></h1>
+                    </div>
+
+                    <div class="col-md-4">  </div>
+                    <div class="col-md-4 center-block"> <p class="text-success bg-success">Acurácias</p> <br> <img src="images/Exp6MultiFriedmanAc.png" class="thumbnail" width="400"/> </div>
+                    <div class="col-md-4"> <p class="text-success bg-success"> Número de regras</p> <br> <img src="images/Exp6MultiFriedmanNr.png" class="thumbnail" width="400"/> </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+
+  <script>
+      $(document).ready(function(){
+    	$('[data-toggle="tooltip"]').tooltip();
+    	$('[data-toggle="popover"]').popover();
+        });
+  </script>
+  </body>
+</html>

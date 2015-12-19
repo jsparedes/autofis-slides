@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exp8</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+      <div class="container-fluid">
+          <div class="jumbotron"> <h4>Filtros de pertinência e Filtros de Suporte</h4> </div>
+
+          <ul class="nav nav-tabs nav-justified">
+              <li class="active"><a href="#t81" data-toggle="tab">Bases binarias</a></li>
+              <li><a href="#t82" data-toggle="tab">Bases de multiplas classes</a></li>
+          </ul>
+
+          <div class="tab-content">
+              <div class="tab-pane active" id="t81">
+                <div class="container-fluid">
+
+                    <div class="col-md-5"> <img src="images/Exp8StartPoint.png" alt="" /> </div>
+                    <div class="col-md-7"> <img src="images/Exp8BinAcNr.png" alt="" /> </div>
+
+                    <div class="row">
+                        <iframe width="900" height="450" frameborder="0" src = 'exp8binac.html' class="center-block"></iframe>
+                    </div>
+
+                    <div class="row">
+                        <iframe width="900" height="450" frameborder="0" src = 'exp8binnr.html' class="center-block"></iframe>
+                    </div>
+
+                    <div class="page-header">
+                          <h1> <small>Teste de Friedman e Holm</small></h1>
+                    </div>
+
+                    <div class="col-md-4">  </div>
+                    <div class="col-md-4 center-block"> <p class="text-success bg-success">Acurácias</p> <br> <img src="images/Exp8BinFriedmanAc.png" class="thumbnail" width="400"/> </div>
+                    <div class="col-md-4"> <p class="text-success bg-success"> Número de regras</p> <br> <img src="images/Exp8BinFriedmanNr.png" class="thumbnail" width="400"/> </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane active" id="t82">
+                <div class="container-fluid">
+                    <div class="col-md-5"> <img src="images/Exp8StartPoint.png" alt="" /> </div>
+                    <div class="col-md-7"> <img src="images/Exp8MultiAcNr.png" alt="" /> </div>
+
+                    <div class="row">
+                        <iframe width="900" height="450" frameborder="0" src = 'exp8multiac.html' class="center-block"></iframe>
+                    </div>
+
+                    <div class="row">
+                        <iframe width="900" height="450" frameborder="0" src = 'exp8multinr.html' class="center-block"></iframe>
+                    </div>
+
+                    <div class="page-header">
+                        <h1> <small>Teste de Friedman e Holm</small></h1>
+                    </div>
+
+                    <div class="col-md-4">  </div>
+                    <div class="col-md-4 center-block"> <p class="text-success bg-success">Acurácias</p> <br> <img src="images/Exp8MultiFriedmanAc.png" class="thumbnail" width="400"/> </div>
+                    <div class="col-md-4"> <p class="text-success bg-success"> Número de regras</p> <br> <img src="images/Exp8MultiFriedmanNr.png" class="thumbnail" width="400"/> </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+
+  <script>
+      $(document).ready(function(){
+    	$('[data-toggle="tooltip"]').tooltip();
+    	$('[data-toggle="popover"]').popover();
+        });
+  </script>
+  </body>
+</html>

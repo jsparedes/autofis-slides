@@ -1,0 +1,338 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/nv.d3.min.css'>
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/d3.min.js' type='text/javascript'></script>
+    <script src='js/nv.d3.min.js' type='text/javascript'></script>
+    <script src='js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart10f060c567f1' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart10f060c567f1()
+    });
+    function drawchart10f060c567f1(){  
+      var opts = {
+ "dom": "chart10f060c567f1",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Regras",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart10f060c567f1" 
+},
+        data = [
+ {
+ "Dataset": "balance",
+"Experimento": "0925",
+"Regras": 3.218875824868 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "0925",
+"Regras": 4.005513348515 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "0925",
+"Regras": 3.703768066608 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "0925",
+"Regras": 3.637586159726 
+},
+{
+ "Dataset": "glass",
+"Experimento": "0925",
+"Regras": 3.417726683613 
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "0925",
+"Regras": 3.039749158971 
+},
+{
+ "Dataset": "iris",
+"Experimento": "0925",
+"Regras": 1.871802176902 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "0925",
+"Regras": 1.902107526397 
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "0925",
+"Regras": 2.917770732084 
+},
+{
+ "Dataset": "tae",
+"Experimento": "0925",
+"Regras": 3.086486636822 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "0925",
+"Regras": 2.406945108318 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "0925",
+"Regras": 3.010620886048 
+},
+{
+ "Dataset": "vowel",
+"Experimento": "0925",
+"Regras": 4.109233174716 
+},
+{
+ "Dataset": "wine",
+"Experimento": "0925",
+"Regras": 2.292534757141 
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "0925",
+"Regras": 3.732896339531 
+},
+{
+ "Dataset": "yeast",
+"Experimento": "0925",
+"Regras": 3.891820298111 
+},
+{
+ "Dataset": "balance",
+"Experimento": "0.950",
+"Regras": 3.218875824868 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "0.950",
+"Regras": 3.937690752177 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "0.950",
+"Regras": 3.747148362238 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "0.950",
+"Regras": 3.658420246629 
+},
+{
+ "Dataset": "glass",
+"Experimento": "0.950",
+"Regras": 3.342861804649 
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "0.950",
+"Regras": 3.025291075796 
+},
+{
+ "Dataset": "iris",
+"Experimento": "0.950",
+"Regras": 1.931521411603 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "0.950",
+"Regras": 1.887069649032 
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "0.950",
+"Regras": 2.862200880929 
+},
+{
+ "Dataset": "tae",
+"Experimento": "0.950",
+"Regras": 3.135494215929 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "0.950",
+"Regras": 2.624668592163 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "0.950",
+"Regras":  3.07269331469 
+},
+{
+ "Dataset": "vowel",
+"Experimento": "0.950",
+"Regras": 4.084294226369 
+},
+{
+ "Dataset": "wine",
+"Experimento": "0.950",
+"Regras": 2.272125885509 
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "0.950",
+"Regras": 3.653252276471 
+},
+{
+ "Dataset": "yeast",
+"Experimento": "0.950",
+"Regras": 3.864931397894 
+},
+{
+ "Dataset": "balance",
+"Experimento": "0.975",
+"Regras": 3.218875824868 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "0.975",
+"Regras": 4.000033882751 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "0.975",
+"Regras": 3.703768066608 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "0.975",
+"Regras": 3.650658241294 
+},
+{
+ "Dataset": "glass",
+"Experimento": "0.975",
+"Regras": 3.377587516023 
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "0.975",
+"Regras": 3.030133700271 
+},
+{
+ "Dataset": "iris",
+"Experimento": "0.975",
+"Regras": 1.902107526397 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "0.975",
+"Regras": 1.974081026022 
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "0.975",
+"Regras": 2.939161922066 
+},
+{
+ "Dataset": "tae",
+"Experimento": "0.975",
+"Regras":  3.11351530921 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "0.975",
+"Regras": 2.549445170926 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "0.975",
+"Regras": 3.039749158971 
+},
+{
+ "Dataset": "vowel",
+"Experimento": "0.975",
+"Regras": 4.107589788972 
+},
+{
+ "Dataset": "wine",
+"Experimento": "0.975",
+"Regras": 2.261763098474 
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "0.975",
+"Regras": 3.676300671907 
+},
+{
+ "Dataset": "yeast",
+"Experimento": "0.975",
+"Regras": 3.873282177112 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+          
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -30)
+
+        
+        
+        chart.yAxis
+  .axisLabel("Ln(regras)")
+  .width(    40)
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

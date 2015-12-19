@@ -1,0 +1,563 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/nv.d3.min.css'>
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/d3.min.js' type='text/javascript'></script>
+    <script src='js/nv.d3.min.js' type='text/javascript'></script>
+    <script src='js/fisheye.js' type='text/javascript'></script>
+
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }
+    </style>
+
+  </head>
+  <body >
+
+    <div id = 'chart31c015e52672' class = 'rChart nvd3'></div>
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart31c015e52672()
+    });
+    function drawchart31c015e52672(){
+      var opts = {
+ "dom": "chart31c015e52672",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Regras",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart31c015e52672"
+},
+        data = [
+ {
+ "Dataset": "appendicitis",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "australian",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.646174797384
+},
+{
+ "Dataset": "balance",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "banana",
+"Experimento": "Frequ\u00EAncia",
+"Regras":  1.30833281965
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Frequ\u00EAncia",
+"Regras":  3.13113691056
+},
+{
+ "Dataset": "crx",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.667228206582
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "glass",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "Frequ\u00EAncia",
+"Regras":  2.37954613413
+},
+{
+ "Dataset": "heart",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.660259537266
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.261763098474
+},
+{
+ "Dataset": "iris",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 1.360976553136
+},
+{
+ "Dataset": "magic",
+"Experimento": "Frequ\u00EAncia",
+"Regras":   1.4586150227
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "Frequ\u00EAncia",
+"Regras":  2.00148000021
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 1.193922468472
+},
+{
+ "Dataset": "pima",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.054123733696
+},
+{
+ "Dataset": "tae",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.701361212951
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.360854001118
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.747270914255
+},
+{
+ "Dataset": "vowel",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "wine",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.066862759473
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Frequ\u00EAncia",
+"Regras": 2.360854001118
+},
+{
+ "Dataset": "yeast",
+"Experimento": "Frequ\u00EAncia",
+"Regras": null
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "CD",
+"Regras": 1.547562508716
+},
+{
+ "Dataset": "australian",
+"Experimento": "CD",
+"Regras": 2.646174797384
+},
+{
+ "Dataset": "balance",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "banana",
+"Experimento": "CD",
+"Regras": 1.098612288668
+},
+{
+ "Dataset": "bupa",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "CD",
+"Regras": 3.148453360572
+},
+{
+ "Dataset": "crx",
+"Experimento": "CD",
+"Regras": 2.639057329615
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "glass",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "haberman",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "CD",
+"Regras":  2.37954613413
+},
+{
+ "Dataset": "heart",
+"Experimento": "CD",
+"Regras": 2.631888840137
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "CD",
+"Regras": 2.208274413523
+},
+{
+ "Dataset": "iris",
+"Experimento": "CD",
+"Regras": 1.360976553136
+},
+{
+ "Dataset": "magic",
+"Experimento": "CD",
+"Regras": 1.481604540924
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "CD",
+"Regras":  2.00148000021
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "CD",
+"Regras": 1.193922468472
+},
+{
+ "Dataset": "pima",
+"Experimento": "CD",
+"Regras": 1.791759469228
+},
+{
+ "Dataset": "saheart",
+"Experimento": "CD",
+"Regras": 1.974081026022
+},
+{
+ "Dataset": "tae",
+"Experimento": "CD",
+"Regras": 2.740840023925
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "titanic",
+"Experimento": "CD",
+"Regras": 2.360854001118
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "CD",
+"Regras": 2.906901059847
+},
+{
+ "Dataset": "vowel",
+"Experimento": "CD",
+"Regras":  4.08092154189
+},
+{
+ "Dataset": "wine",
+"Experimento": "CD",
+"Regras": 2.240709689276
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "CD",
+"Regras": 2.424802725718
+},
+{
+ "Dataset": "yeast",
+"Experimento": "CD",
+"Regras": null
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "MQR",
+"Regras": 1.704748092238
+},
+{
+ "Dataset": "australian",
+"Experimento": "MQR",
+"Regras": 2.451005098112
+},
+{
+ "Dataset": "balance",
+"Experimento": "MQR",
+"Regras": 3.214867803471
+},
+{
+ "Dataset": "banana",
+"Experimento": "MQR",
+"Regras": 1.757857917552
+},
+{
+ "Dataset": "bupa",
+"Experimento": "MQR",
+"Regras":  2.07944154168
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "MQR",
+"Regras": 3.918005077106
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "MQR",
+"Regras":  3.38777436133
+},
+{
+ "Dataset": "crx",
+"Experimento": "MQR",
+"Regras": 2.476538400117
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "MQR",
+"Regras": 3.889777396481
+},
+{
+ "Dataset": "glass",
+"Experimento": "MQR",
+"Regras": 3.194583132299
+},
+{
+ "Dataset": "haberman",
+"Experimento": "MQR",
+"Regras": 2.230014400159
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "MQR",
+"Regras": 2.415913778301
+},
+{
+ "Dataset": "heart",
+"Experimento": "MQR",
+"Regras": 2.617395832834
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "MQR",
+"Regras": 2.821378886409
+},
+{
+ "Dataset": "iris",
+"Experimento": "MQR",
+"Regras": 1.791759469228
+},
+{
+ "Dataset": "magic",
+"Experimento": "MQR",
+"Regras": 1.887069649032
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "MQR",
+"Regras": 2.261763098474
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "MQR",
+"Regras": 2.151762203259
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "MQR",
+"Regras": 2.753660712354
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "MQR",
+"Regras": 2.066862759473
+},
+{
+ "Dataset": "pima",
+"Experimento": "MQR",
+"Regras": 2.163323025661
+},
+{
+ "Dataset": "saheart",
+"Experimento": "MQR",
+"Regras": 2.397895272798
+},
+{
+ "Dataset": "tae",
+"Experimento": "MQR",
+"Regras": 2.879198457298
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "MQR",
+"Regras": 2.302585092994
+},
+{
+ "Dataset": "titanic",
+"Experimento": "MQR",
+"Regras": 2.174751721484
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "MQR",
+"Regras": 2.890371757896
+},
+{
+ "Dataset": "vowel",
+"Experimento": "MQR",
+"Regras": 4.206184043978
+},
+{
+ "Dataset": "wine",
+"Experimento": "MQR",
+"Regras": 2.360854001118
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "MQR",
+"Regras":  3.33576957634
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "MQR",
+"Regras": 2.624668592163
+},
+{
+ "Dataset": "yeast",
+"Experimento": "MQR",
+"Regras": 3.453157120593
+}
+]
+
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+
+
+        chart
+  .reduceXTicks(false)
+
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -30)
+
+
+
+        chart.yAxis
+  .axisLabel("Ln(regras)")
+  .width(    40)
+
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,920 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css'>
+    
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='//d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js' type='text/javascript'></script>
+    <script src='//nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart105c6068570' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart105c6068570()
+    });
+    function drawchart105c6068570(){  
+      var opts = {
+ "dom": "chart105c6068570",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Regras",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart105c6068570" 
+},
+        data = [
+ {
+ "Dataset": "Iris",
+"Experimento": "Tr1_1",
+"Regras": 4.955827057601 
+},
+{
+ "Dataset": "Glass",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Wine",
+"Experimento": "Tr1_1",
+"Regras": 8.324336332707 
+},
+{
+ "Dataset": "Ecoli",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Balance",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Cleveland",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Pima",
+"Experimento": "Tr1_1",
+"Regras": 7.126087273299 
+},
+{
+ "Dataset": "Titanic",
+"Experimento": "Tr1_1",
+"Regras": 3.433987204485 
+},
+{
+ "Dataset": "Banana",
+"Experimento": "Tr1_1",
+"Regras": 2.995732273554 
+},
+{
+ "Dataset": "Winequality-Red",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Phoneme",
+"Experimento": "Tr1_1",
+"Regras": 5.717027701406 
+},
+{
+ "Dataset": "Segment",
+"Experimento": "Tr1_1",
+"Regras": 9.950657357013 
+},
+{
+ "Dataset": "Ring",
+"Experimento": "Tr1_1",
+"Regras": 9.768984259198 
+},
+{
+ "Dataset": "Twonorm",
+"Experimento": "Tr1_1",
+"Regras": 10.04663506175 
+},
+{
+ "Dataset": "Magic",
+"Experimento": "Tr1_1",
+"Regras": 7.950149887652 
+},
+{
+ "Dataset": "Texture",
+"Experimento": "Tr1_1",
+"Regras": 12.22257571763 
+},
+{
+ "Dataset": "Spambase",
+"Experimento": "Tr1_1",
+"Regras": 11.64806805891 
+},
+{
+ "Dataset": "Hayes-Roth",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Tae",
+"Experimento": "Tr1_1",
+"Regras": 5.081404364984 
+},
+{
+ "Dataset": "Haberman",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "New-Thyroid",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Hepatitis",
+"Experimento": "Tr1_1",
+"Regras": 9.351579483669 
+},
+{
+ "Dataset": "Bupa",
+"Experimento": "Tr1_1",
+"Regras":  6.30809844151 
+},
+{
+ "Dataset": "Heart",
+"Experimento": "Tr1_1",
+"Regras": 8.071843149609 
+},
+{
+ "Dataset": "Wisconsin",
+"Experimento": "Tr1_1",
+"Regras": 6.598509028615 
+},
+{
+ "Dataset": "Ionosphere",
+"Experimento": "Tr1_1",
+"Regras": 10.63086706339 
+},
+{
+ "Dataset": "Spectfheart",
+"Experimento": "Tr1_1",
+"Regras": 12.45880994993 
+},
+{
+ "Dataset": "Dermatology",
+"Experimento": "Tr1_1",
+"Regras":  10.7136841664 
+},
+{
+ "Dataset": "Contraceptive",
+"Experimento": "Tr1_1",
+"Regras": 6.756932389248 
+},
+{
+ "Dataset": "Vehicle",
+"Experimento": "Tr1_1",
+"Regras": 9.644781588321 
+},
+{
+ "Dataset": "Page-blocks",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Thyroid",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Penbased",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Satimage",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Optdigits",
+"Experimento": "Tr1_1",
+"Regras": 12.93317429303 
+},
+{
+ "Dataset": "Coil2000",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Saheart",
+"Experimento": "Tr1_1",
+"Regras":  7.31322038709 
+},
+{
+ "Dataset": "Automobile",
+"Experimento": "Tr1_1",
+"Regras":              0 
+},
+{
+ "Dataset": "Australian",
+"Experimento": "Tr1_1",
+"Regras": 8.348301054934 
+},
+{
+ "Dataset": "Crx",
+"Experimento": "Tr1_1",
+"Regras": 8.560827228436 
+},
+{
+ "Dataset": "German",
+"Experimento": "Tr1_1",
+"Regras": 9.055789612128 
+},
+{
+ "Dataset": "Iris",
+"Experimento": "Tr1_2",
+"Regras":  9.19917830727 
+},
+{
+ "Dataset": "Glass",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Wine",
+"Experimento": "Tr1_2",
+"Regras": 12.90018685836 
+},
+{
+ "Dataset": "Ecoli",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Balance",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Cleveland",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Pima",
+"Experimento": "Tr1_2",
+"Regras": 11.27213970098 
+},
+{
+ "Dataset": "Titanic",
+"Experimento": "Tr1_2",
+"Regras": 7.650644551437 
+},
+{
+ "Dataset": "Banana",
+"Experimento": "Tr1_2",
+"Regras": 6.689599269179 
+},
+{
+ "Dataset": "Winequality-Red",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Phoneme",
+"Experimento": "Tr1_2",
+"Regras": 9.832528463596 
+},
+{
+ "Dataset": "Segment",
+"Experimento": "Tr1_2",
+"Regras": 13.77299129056 
+},
+{
+ "Dataset": "Ring",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Twonorm",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Magic",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Texture",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Spambase",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Hayes-Roth",
+"Experimento": "Tr1_2",
+"Regras": 9.028698584087 
+},
+{
+ "Dataset": "Tae",
+"Experimento": "Tr1_2",
+"Regras": 9.672626800078 
+},
+{
+ "Dataset": "Haberman",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "New-Thyroid",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Hepatitis",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Bupa",
+"Experimento": "Tr1_2",
+"Regras": 10.28024449651 
+},
+{
+ "Dataset": "Heart",
+"Experimento": "Tr1_2",
+"Regras": 12.64066928014 
+},
+{
+ "Dataset": "Wisconsin",
+"Experimento": "Tr1_2",
+"Regras":  11.3087876549 
+},
+{
+ "Dataset": "Ionosphere",
+"Experimento": "Tr1_2",
+"Regras": 15.62239752741 
+},
+{
+ "Dataset": "Spectfheart",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Dermatology",
+"Experimento": "Tr1_2",
+"Regras":  15.4744073633 
+},
+{
+ "Dataset": "Contraceptive",
+"Experimento": "Tr1_2",
+"Regras": 11.52449824132 
+},
+{
+ "Dataset": "Vehicle",
+"Experimento": "Tr1_2",
+"Regras": 13.93180359524 
+},
+{
+ "Dataset": "Page-blocks",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Thyroid",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Penbased",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Satimage",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Optdigits",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Coil2000",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Saheart",
+"Experimento": "Tr1_2",
+"Regras": 11.65564823715 
+},
+{
+ "Dataset": "Automobile",
+"Experimento": "Tr1_2",
+"Regras":              0 
+},
+{
+ "Dataset": "Australian",
+"Experimento": "Tr1_2",
+"Regras": 12.70994918021 
+},
+{
+ "Dataset": "Crx",
+"Experimento": "Tr1_2",
+"Regras":  12.9465637068 
+},
+{
+ "Dataset": "German",
+"Experimento": "Tr1_2",
+"Regras": 13.99490450014 
+},
+{
+ "Dataset": "Iris",
+"Experimento": "Tr1_3",
+"Regras": 4.143134726392 
+},
+{
+ "Dataset": "Glass",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Wine",
+"Experimento": "Tr1_3",
+"Regras": 7.019296653715 
+},
+{
+ "Dataset": "Ecoli",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Balance",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Cleveland",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Pima",
+"Experimento": "Tr1_3",
+"Regras": 6.405228458031 
+},
+{
+ "Dataset": "Titanic",
+"Experimento": "Tr1_3",
+"Regras": 3.433987204485 
+},
+{
+ "Dataset": "Banana",
+"Experimento": "Tr1_3",
+"Regras": 2.484906649788 
+},
+{
+ "Dataset": "Winequality-Red",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Phoneme",
+"Experimento": "Tr1_3",
+"Regras": 4.795790545597 
+},
+{
+ "Dataset": "Segment",
+"Experimento": "Tr1_3",
+"Regras": 9.441690159837 
+},
+{
+ "Dataset": "Ring",
+"Experimento": "Tr1_3",
+"Regras":  9.09380655572 
+},
+{
+ "Dataset": "Twonorm",
+"Experimento": "Tr1_3",
+"Regras":  8.63941082414 
+},
+{
+ "Dataset": "Magic",
+"Experimento": "Tr1_3",
+"Regras": 7.173191742487 
+},
+{
+ "Dataset": "Texture",
+"Experimento": "Tr1_3",
+"Regras": 11.36727522052 
+},
+{
+ "Dataset": "Spambase",
+"Experimento": "Tr1_3",
+"Regras": 10.54597281829 
+},
+{
+ "Dataset": "Hayes-Roth",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Tae",
+"Experimento": "Tr1_3",
+"Regras": 4.762173934798 
+},
+{
+ "Dataset": "Haberman",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "New-Thyroid",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Hepatitis",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Bupa",
+"Experimento": "Tr1_3",
+"Regras": 5.739792912179 
+},
+{
+ "Dataset": "Heart",
+"Experimento": "Tr1_3",
+"Regras": 7.916442860122 
+},
+{
+ "Dataset": "Wisconsin",
+"Experimento": "Tr1_3",
+"Regras": 6.553933404026 
+},
+{
+ "Dataset": "Ionosphere",
+"Experimento": "Tr1_3",
+"Regras": 10.15587917821 
+},
+{
+ "Dataset": "Spectfheart",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Dermatology",
+"Experimento": "Tr1_3",
+"Regras": 10.59575935006 
+},
+{
+ "Dataset": "Contraceptive",
+"Experimento": "Tr1_3",
+"Regras": 6.566672429803 
+},
+{
+ "Dataset": "Vehicle",
+"Experimento": "Tr1_3",
+"Regras": 8.254008590565 
+},
+{
+ "Dataset": "Page-blocks",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Thyroid",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Penbased",
+"Experimento": "Tr1_3",
+"Regras": 6.739336627357 
+},
+{
+ "Dataset": "Satimage",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Optdigits",
+"Experimento": "Tr1_3",
+"Regras": 12.85122372157 
+},
+{
+ "Dataset": "Coil2000",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Saheart",
+"Experimento": "Tr1_3",
+"Regras":  6.45519856334 
+},
+{
+ "Dataset": "Automobile",
+"Experimento": "Tr1_3",
+"Regras":              0 
+},
+{
+ "Dataset": "Australian",
+"Experimento": "Tr1_3",
+"Regras": 8.237479288614 
+},
+{
+ "Dataset": "Crx",
+"Experimento": "Tr1_3",
+"Regras": 8.454892165219 
+},
+{
+ "Dataset": "German",
+"Experimento": "Tr1_3",
+"Regras": 8.806274284782 
+},
+{
+ "Dataset": "Iris",
+"Experimento": "Tr1_4",
+"Regras": 8.966228514226 
+},
+{
+ "Dataset": "Glass",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Wine",
+"Experimento": "Tr1_4",
+"Regras": 12.72779073046 
+},
+{
+ "Dataset": "Ecoli",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Balance",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Cleveland",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Pima",
+"Experimento": "Tr1_4",
+"Regras": 11.13413636707 
+},
+{
+ "Dataset": "Titanic",
+"Experimento": "Tr1_4",
+"Regras": 7.616775808698 
+},
+{
+ "Dataset": "Banana",
+"Experimento": "Tr1_4",
+"Regras": 6.410174881966 
+},
+{
+ "Dataset": "Winequality-Red",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Phoneme",
+"Experimento": "Tr1_4",
+"Regras": 9.675394271496 
+},
+{
+ "Dataset": "Segment",
+"Experimento": "Tr1_4",
+"Regras": 13.75850201525 
+},
+{
+ "Dataset": "Ring",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Twonorm",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Magic",
+"Experimento": "Tr1_4",
+"Regras": 11.80624412199 
+},
+{
+ "Dataset": "Texture",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Spambase",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Hayes-Roth",
+"Experimento": "Tr1_4",
+"Regras": 8.962647947741 
+},
+{
+ "Dataset": "Tae",
+"Experimento": "Tr1_4",
+"Regras": 9.592263871501 
+},
+{
+ "Dataset": "Haberman",
+"Experimento": "Tr1_4",
+"Regras": 7.872836175026 
+},
+{
+ "Dataset": "New-Thyroid",
+"Experimento": "Tr1_4",
+"Regras": 9.421330367118 
+},
+{
+ "Dataset": "Hepatitis",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Bupa",
+"Experimento": "Tr1_4",
+"Regras": 10.14995692915 
+},
+{
+ "Dataset": "Heart",
+"Experimento": "Tr1_4",
+"Regras": 12.60447956983 
+},
+{
+ "Dataset": "Wisconsin",
+"Experimento": "Tr1_4",
+"Regras": 11.25184637431 
+},
+{
+ "Dataset": "Ionosphere",
+"Experimento": "Tr1_4",
+"Regras": 15.50350231642 
+},
+{
+ "Dataset": "Spectfheart",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Dermatology",
+"Experimento": "Tr1_4",
+"Regras": 15.42658473099 
+},
+{
+ "Dataset": "Contraceptive",
+"Experimento": "Tr1_4",
+"Regras": 11.43653026372 
+},
+{
+ "Dataset": "Vehicle",
+"Experimento": "Tr1_4",
+"Regras": 13.75194649522 
+},
+{
+ "Dataset": "Page-blocks",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Thyroid",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Penbased",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Satimage",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Optdigits",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Coil2000",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Saheart",
+"Experimento": "Tr1_4",
+"Regras": 11.52505164477 
+},
+{
+ "Dataset": "Automobile",
+"Experimento": "Tr1_4",
+"Regras":              0 
+},
+{
+ "Dataset": "Australian",
+"Experimento": "Tr1_4",
+"Regras": 12.67790273079 
+},
+{
+ "Dataset": "Crx",
+"Experimento": "Tr1_4",
+"Regras":  12.9205188822 
+},
+{
+ "Dataset": "German",
+"Experimento": "Tr1_4",
+"Regras": 13.94490239444 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+  .color([ "brown", "blue", "#594c26", "green" ])
+          
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -45)
+
+        
+        
+        chart.yAxis
+  .axisLabel("Ln(regras)")
+  .width(    40)
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title></title>
+<script src="js/d3.min.js"></script>
+<style>
+    svg {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+</style>
+<body>
+<script>
+
+var width = 960,
+    height = 400;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var numberOfButtons = 3;
+
+var x = d3.scale.linear()
+    .domain([0,numberOfButtons+1])
+    .range([0,width]);
+
+var buttons = d3.range(numberOfButtons).map(function(d,i) {
+    return { id: i+1, x: x(i+1), y: height/2 }
+});
+
+var buttonGroup = svg.selectAll("g")
+    .data(buttons)
+  .enter().append("g")
+    .attr("transform", function(d) { return "translate("+d.x+","+d.y+")"; });
+    
+maper={ 
+     0:"Prof. Ricardo Tanscheit", 
+     1: "Prof. Marley Vellasco", 
+     2: "M.Sc. Adriano Koshiyama"
+};
+
+buttonGroup.append("circle")
+    .attr("r", 20)
+    .attr("fill", '#000')
+    .attr("cursor", "pointer")
+    .on("mouseover", function(d,i) {
+        d3.select(this).transition()
+            .ease("elastic")
+            .duration("500")
+            .attr("r", 95);//35
+        d3.select("#clipCircle"+i+" circle").transition()
+            .ease("cubic-out")
+            .duration("200")
+            .attr("r", 92);//32
+        d3.select("#text"+i).transition()
+            .ease("cubic-out")
+            .duration("200")
+            .attr("y", 150)
+            .attr("font-size", 20)  // Hice trampa, reduje la letra
+            .attr("fill", "#333")
+            .text(maper[i]);
+    })
+    .on("mouseout", function(d,i) {
+        d3.select(this).transition()
+            .ease("quad")
+            .delay("100")
+            .duration("200")
+            .attr("r", 20); //20
+        d3.select("#clipCircle"+i+" circle").transition()
+            .ease("quad")
+            .delay("100")
+            .duration("200")
+            .attr("r", 0);
+        d3.select("#text"+i).transition()
+            .ease("cubic-out")
+            .duration("400")
+            .delay("100")
+            .attr("y", 7)
+            .attr("font-size", 20)
+            .attr("fill", "#FFF")
+            .text(i+1);
+    } );
+
+buttonGroup.append("clipPath")
+    .attr("id", function(d, i) { return "clipCircle" + i; })
+    .append("circle")
+    .attr("r", 0);
+
+buttonGroup.append("image")
+    .attr("xlink:href", function(d,i) { return "images/personas.png"; })
+    .attr("id", function(d,i) { return "image"+i; })
+    .attr("clip-path", function(d,i) { return "url(#clipCircle"+i+")"; })
+    .attr("x", function(d,i) { return -i*260-106; })
+    .attr("y", -106)
+    .attr("width", numberOfButtons*260)
+    .attr("height", 260)
+    .attr("pointer-events", "none");
+
+buttonGroup.append("text")
+    .text(function(d) { return d.id; })
+    .attr("text-anchor", "middle")
+    .attr("y", 7)
+    .attr("id", function(d, i) { return "text" + i; })
+    .attr("font-size", "20px")
+    .attr("fill", "#FFF")
+    .attr("pointer-events", "none");
+
+</script>
+
+</body>

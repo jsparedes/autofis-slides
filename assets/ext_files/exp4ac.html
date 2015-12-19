@@ -1,0 +1,594 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/nv.d3.min.css'>
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/d3.min.js' type='text/javascript'></script>
+    <script src='js/nv.d3.min.js' type='text/javascript'></script>
+    <script src='js/fisheye.js' type='text/javascript'></script>
+
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }
+    </style>
+
+  </head>
+  <body >
+
+    <div id = 'chart31c024e41e23' class = 'rChart nvd3'></div>
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart31c024e41e23()
+    });
+    function drawchart31c024e41e23(){
+      var opts = {
+ "dom": "chart31c024e41e23",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Acur\u00E1cia",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart31c024e41e23"
+},
+        data = [
+ {
+ "Dataset": "appendicitis",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "australian",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  85.5072463768
+},
+{
+ "Dataset": "automobile",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "balance",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "banana",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  56.1509433962
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  50.4426365141
+},
+{
+ "Dataset": "crx",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  86.2991878825
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "glass",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":          68.75
+},
+{
+ "Dataset": "heart",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  83.3333333333
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  83.4155844156
+},
+{
+ "Dataset": "iris",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":             96
+},
+{
+ "Dataset": "magic",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  71.6246056782
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  96.8128964059
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  71.2990347094
+},
+{
+ "Dataset": "pima",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  69.6993524514
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  64.6290612864
+},
+{
+ "Dataset": "tae",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":         43.125
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  77.6030440148
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  55.9173669468
+},
+{
+ "Dataset": "vowel",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "wine",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":  87.7124183007
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia":   94.465863627
+},
+{
+ "Dataset": "yeast",
+"Experimento": "Frequ\u00EAncia",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "CD",
+"Acur\u00E1cia":  87.9090909091
+},
+{
+ "Dataset": "australian",
+"Experimento": "CD",
+"Acur\u00E1cia":  85.5072463768
+},
+{
+ "Dataset": "automobile",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "balance",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "banana",
+"Experimento": "CD",
+"Acur\u00E1cia":  58.7547169811
+},
+{
+ "Dataset": "bupa",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "CD",
+"Acur\u00E1cia":  52.6153704725
+},
+{
+ "Dataset": "crx",
+"Experimento": "CD",
+"Acur\u00E1cia":  86.2991878825
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "glass",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "haberman",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "CD",
+"Acur\u00E1cia":          68.75
+},
+{
+ "Dataset": "heart",
+"Experimento": "CD",
+"Acur\u00E1cia":  83.3333333333
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "CD",
+"Acur\u00E1cia":  83.4155844156
+},
+{
+ "Dataset": "iris",
+"Experimento": "CD",
+"Acur\u00E1cia":             96
+},
+{
+ "Dataset": "magic",
+"Experimento": "CD",
+"Acur\u00E1cia":  74.0010515247
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "CD",
+"Acur\u00E1cia":  96.8128964059
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "CD",
+"Acur\u00E1cia":  71.2990347094
+},
+{
+ "Dataset": "pima",
+"Experimento": "CD",
+"Acur\u00E1cia":  75.6740189635
+},
+{
+ "Dataset": "saheart",
+"Experimento": "CD",
+"Acur\u00E1cia":  72.5208140611
+},
+{
+ "Dataset": "spambase",
+"Experimento": "CD",
+"Acur\u00E1cia":  63.9985317799
+},
+{
+ "Dataset": "tae",
+"Experimento": "CD",
+"Acur\u00E1cia":  47.6666666667
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "titanic",
+"Experimento": "CD",
+"Acur\u00E1cia":  77.6030440148
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "CD",
+"Acur\u00E1cia":  55.3235294118
+},
+{
+ "Dataset": "vowel",
+"Experimento": "CD",
+"Acur\u00E1cia":  38.0808080808
+},
+{
+ "Dataset": "wine",
+"Experimento": "CD",
+"Acur\u00E1cia":  93.1699346405
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "CD",
+"Acur\u00E1cia":  94.1588891825
+},
+{
+ "Dataset": "yeast",
+"Experimento": "CD",
+"Acur\u00E1cia": null
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "MQR",
+"Acur\u00E1cia":             87
+},
+{
+ "Dataset": "australian",
+"Experimento": "MQR",
+"Acur\u00E1cia":   85.652173913
+},
+{
+ "Dataset": "automobile",
+"Experimento": "MQR",
+"Acur\u00E1cia":  63.7046301652
+},
+{
+ "Dataset": "balance",
+"Experimento": "MQR",
+"Acur\u00E1cia":  89.7588409593
+},
+{
+ "Dataset": "banana",
+"Experimento": "MQR",
+"Acur\u00E1cia":             63
+},
+{
+ "Dataset": "bupa",
+"Experimento": "MQR",
+"Acur\u00E1cia":  62.6196801301
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "MQR",
+"Acur\u00E1cia":  58.9599819906
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "MQR",
+"Acur\u00E1cia":  52.5505607648
+},
+{
+ "Dataset": "crx",
+"Experimento": "MQR",
+"Acur\u00E1cia":  86.2991878825
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "MQR",
+"Acur\u00E1cia":  73.7878787879
+},
+{
+ "Dataset": "glass",
+"Experimento": "MQR",
+"Acur\u00E1cia":  60.4979296066
+},
+{
+ "Dataset": "haberman",
+"Experimento": "MQR",
+"Acur\u00E1cia":  75.1397849462
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "MQR",
+"Acur\u00E1cia":         70.625
+},
+{
+ "Dataset": "heart",
+"Experimento": "MQR",
+"Acur\u00E1cia":  84.4444444444
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "MQR",
+"Acur\u00E1cia":  85.2337662338
+},
+{
+ "Dataset": "iris",
+"Experimento": "MQR",
+"Acur\u00E1cia":  95.3333333333
+},
+{
+ "Dataset": "magic",
+"Experimento": "MQR",
+"Acur\u00E1cia":  77.2134595163
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "MQR",
+"Acur\u00E1cia":  92.2410147992
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "MQR",
+"Acur\u00E1cia":  86.5800865801
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "MQR",
+"Acur\u00E1cia":  89.8026394801
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "MQR",
+"Acur\u00E1cia":  70.3734168549
+},
+{
+ "Dataset": "pima",
+"Experimento": "MQR",
+"Acur\u00E1cia":   74.496687523
+},
+{
+ "Dataset": "saheart",
+"Experimento": "MQR",
+"Acur\u00E1cia":  72.3034227567
+},
+{
+ "Dataset": "spambase",
+"Experimento": "MQR",
+"Acur\u00E1cia":  68.4799185375
+},
+{
+ "Dataset": "tae",
+"Experimento": "MQR",
+"Acur\u00E1cia":         43.125
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "MQR",
+"Acur\u00E1cia":  92.3055555556
+},
+{
+ "Dataset": "titanic",
+"Experimento": "MQR",
+"Acur\u00E1cia":  77.6030440148
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "MQR",
+"Acur\u00E1cia":  56.2717086835
+},
+{
+ "Dataset": "vowel",
+"Experimento": "MQR",
+"Acur\u00E1cia":  45.1515151515
+},
+{
+ "Dataset": "wine",
+"Experimento": "MQR",
+"Acur\u00E1cia":  92.6470588235
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "MQR",
+"Acur\u00E1cia":  57.2853773585
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "MQR",
+"Acur\u00E1cia":  94.9008372625
+},
+{
+ "Dataset": "yeast",
+"Experimento": "MQR",
+"Acur\u00E1cia":  50.3986033013
+}
+]
+
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+
+
+        chart
+  .reduceXTicks(false)
+
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -30)
+
+
+
+        chart.yAxis
+  .axisLabel("Acur\u00E1cia")
+  .width(    55)
+  .tickFormat( function(d) {return d3.format(',.2f')(d)} )
+
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+
+    <script></script>
+  </body>
+</html>

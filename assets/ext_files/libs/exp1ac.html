@@ -1,0 +1,915 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css'>
+    
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='//d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js' type='text/javascript'></script>
+    <script src='//nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart105c1f3d470d' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart105c1f3d470d()
+    });
+    function drawchart105c1f3d470d(){  
+      var opts = {
+ "dom": "chart105c1f3d470d",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Acuracia",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart105c1f3d470d" 
+},
+        data = [
+ {
+ "Dataset": "Iris",
+"Experimento": "Ac1_1",
+"Acuracia": 0.764395604396 
+},
+{
+ "Dataset": "Glass",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Wine",
+"Experimento": "Ac1_1",
+"Acuracia": 0.337908496732 
+},
+{
+ "Dataset": "Ecoli",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Balance",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Cleveland",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Pima",
+"Experimento": "Ac1_1",
+"Acuracia": 0.654994566837 
+},
+{
+ "Dataset": "Titanic",
+"Experimento": "Ac1_1",
+"Acuracia": 0.681970382559 
+},
+{
+ "Dataset": "Banana",
+"Experimento": "Ac1_1",
+"Acuracia": 0.584376096111 
+},
+{
+ "Dataset": "Winequality-Red",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Phoneme",
+"Experimento": "Ac1_1",
+"Acuracia": 0.715019600939 
+},
+{
+ "Dataset": "Segment",
+"Experimento": "Ac1_1",
+"Acuracia": 0.0994344254156 
+},
+{
+ "Dataset": "Ring",
+"Experimento": "Ac1_1",
+"Acuracia": 0.436891891892 
+},
+{
+ "Dataset": "Twonorm",
+"Experimento": "Ac1_1",
+"Acuracia": 0.640945945946 
+},
+{
+ "Dataset": "Magic",
+"Experimento": "Ac1_1",
+"Acuracia": 0.644325724533 
+},
+{
+ "Dataset": "Texture",
+"Experimento": "Ac1_1",
+"Acuracia": 0.398181818182 
+},
+{
+ "Dataset": "Spambase",
+"Experimento": "Ac1_1",
+"Acuracia": 0.605829781188 
+},
+{
+ "Dataset": "Hayes-Roth",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Tae",
+"Experimento": "Ac1_1",
+"Acuracia":         0.4375 
+},
+{
+ "Dataset": "Haberman",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "New-Thyroid",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Hepatitis",
+"Experimento": "Ac1_1",
+"Acuracia": 0.834274891775 
+},
+{
+ "Dataset": "Bupa",
+"Experimento": "Ac1_1",
+"Acuracia": 0.589259962049 
+},
+{
+ "Dataset": "Heart",
+"Experimento": "Ac1_1",
+"Acuracia": 0.555555555556 
+},
+{
+ "Dataset": "Wisconsin",
+"Experimento": "Ac1_1",
+"Acuracia": 0.644107762728 
+},
+{
+ "Dataset": "Ionosphere",
+"Experimento": "Ac1_1",
+"Acuracia": 0.641031746032 
+},
+{
+ "Dataset": "Spectfheart",
+"Experimento": "Ac1_1",
+"Acuracia": 0.925071225071 
+},
+{
+ "Dataset": "Dermatology",
+"Experimento": "Ac1_1",
+"Acuracia": 0.310253110253 
+},
+{
+ "Dataset": "Contraceptive",
+"Experimento": "Ac1_1",
+"Acuracia": 0.427022430594 
+},
+{
+ "Dataset": "Vehicle",
+"Experimento": "Ac1_1",
+"Acuracia": 0.394845938375 
+},
+{
+ "Dataset": "Page-blocks",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Thyroid",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Penbased",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Satimage",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Optdigits",
+"Experimento": "Ac1_1",
+"Acuracia": 0.101423487544 
+},
+{
+ "Dataset": "Coil2000",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Saheart",
+"Experimento": "Ac1_1",
+"Acuracia": 0.651433857539 
+},
+{
+ "Dataset": "Automobile",
+"Experimento": "Ac1_1",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Australian",
+"Experimento": "Ac1_1",
+"Acuracia": 0.555072463768 
+},
+{
+ "Dataset": "Crx",
+"Experimento": "Ac1_1",
+"Acuracia": 0.546653053666 
+},
+{
+ "Dataset": "German",
+"Experimento": "Ac1_1",
+"Acuracia":            0.7 
+},
+{
+ "Dataset": "Iris",
+"Experimento": "Ac1_2",
+"Acuracia": 0.323626373626 
+},
+{
+ "Dataset": "Glass",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Wine",
+"Experimento": "Ac1_2",
+"Acuracia": 0.208496732026 
+},
+{
+ "Dataset": "Ecoli",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Balance",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Cleveland",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Pima",
+"Experimento": "Ac1_2",
+"Acuracia": 0.651081374766 
+},
+{
+ "Dataset": "Titanic",
+"Experimento": "Ac1_2",
+"Acuracia": 0.676966269025 
+},
+{
+ "Dataset": "Banana",
+"Experimento": "Ac1_2",
+"Acuracia": 0.551645582043 
+},
+{
+ "Dataset": "Winequality-Red",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Phoneme",
+"Experimento": "Ac1_2",
+"Acuracia": 0.710314637084 
+},
+{
+ "Dataset": "Segment",
+"Experimento": "Ac1_2",
+"Acuracia": 0.0994344254156 
+},
+{
+ "Dataset": "Ring",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Twonorm",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Magic",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Texture",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Spambase",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Hayes-Roth",
+"Experimento": "Ac1_2",
+"Acuracia":        0.40625 
+},
+{
+ "Dataset": "Tae",
+"Experimento": "Ac1_2",
+"Acuracia": 0.344166666667 
+},
+{
+ "Dataset": "Haberman",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "New-Thyroid",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Hepatitis",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Bupa",
+"Experimento": "Ac1_2",
+"Acuracia": 0.589259962049 
+},
+{
+ "Dataset": "Heart",
+"Experimento": "Ac1_2",
+"Acuracia": 0.555555555556 
+},
+{
+ "Dataset": "Wisconsin",
+"Experimento": "Ac1_2",
+"Acuracia": 0.650066143855 
+},
+{
+ "Dataset": "Ionosphere",
+"Experimento": "Ac1_2",
+"Acuracia": 0.641031746032 
+},
+{
+ "Dataset": "Spectfheart",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Dermatology",
+"Experimento": "Ac1_2",
+"Acuracia": 0.310253110253 
+},
+{
+ "Dataset": "Contraceptive",
+"Experimento": "Ac1_2",
+"Acuracia": 0.427022430594 
+},
+{
+ "Dataset": "Vehicle",
+"Experimento": "Ac1_2",
+"Acuracia": 0.257703081232 
+},
+{
+ "Dataset": "Page-blocks",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Thyroid",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Penbased",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Satimage",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Optdigits",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Coil2000",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Saheart",
+"Experimento": "Ac1_2",
+"Acuracia": 0.653654024052 
+},
+{
+ "Dataset": "Automobile",
+"Experimento": "Ac1_2",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Australian",
+"Experimento": "Ac1_2",
+"Acuracia": 0.555072463768 
+},
+{
+ "Dataset": "Crx",
+"Experimento": "Ac1_2",
+"Acuracia": 0.546653053666 
+},
+{
+ "Dataset": "German",
+"Experimento": "Ac1_2",
+"Acuracia":            0.7 
+},
+{
+ "Dataset": "Iris",
+"Experimento": "Ac1_3",
+"Acuracia": 0.764395604396 
+},
+{
+ "Dataset": "Glass",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Wine",
+"Experimento": "Ac1_3",
+"Acuracia": 0.337908496732 
+},
+{
+ "Dataset": "Ecoli",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Balance",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Cleveland",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Pima",
+"Experimento": "Ac1_3",
+"Acuracia": 0.654994566837 
+},
+{
+ "Dataset": "Titanic",
+"Experimento": "Ac1_3",
+"Acuracia": 0.681970382559 
+},
+{
+ "Dataset": "Banana",
+"Experimento": "Ac1_3",
+"Acuracia": 0.584376096111 
+},
+{
+ "Dataset": "Winequality-Red",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Phoneme",
+"Experimento": "Ac1_3",
+"Acuracia": 0.715019600939 
+},
+{
+ "Dataset": "Segment",
+"Experimento": "Ac1_3",
+"Acuracia": 0.0994344254156 
+},
+{
+ "Dataset": "Ring",
+"Experimento": "Ac1_3",
+"Acuracia": 0.436891891892 
+},
+{
+ "Dataset": "Twonorm",
+"Experimento": "Ac1_3",
+"Acuracia": 0.640945945946 
+},
+{
+ "Dataset": "Magic",
+"Experimento": "Ac1_3",
+"Acuracia": 0.644325724533 
+},
+{
+ "Dataset": "Texture",
+"Experimento": "Ac1_3",
+"Acuracia": 0.398181818182 
+},
+{
+ "Dataset": "Spambase",
+"Experimento": "Ac1_3",
+"Acuracia": 0.605829781188 
+},
+{
+ "Dataset": "Hayes-Roth",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Tae",
+"Experimento": "Ac1_3",
+"Acuracia":         0.4375 
+},
+{
+ "Dataset": "Haberman",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "New-Thyroid",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Hepatitis",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Bupa",
+"Experimento": "Ac1_3",
+"Acuracia": 0.589259962049 
+},
+{
+ "Dataset": "Heart",
+"Experimento": "Ac1_3",
+"Acuracia": 0.555555555556 
+},
+{
+ "Dataset": "Wisconsin",
+"Experimento": "Ac1_3",
+"Acuracia": 0.644107762728 
+},
+{
+ "Dataset": "Ionosphere",
+"Experimento": "Ac1_3",
+"Acuracia": 0.641031746032 
+},
+{
+ "Dataset": "Spectfheart",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Dermatology",
+"Experimento": "Ac1_3",
+"Acuracia": 0.310253110253 
+},
+{
+ "Dataset": "Contraceptive",
+"Experimento": "Ac1_3",
+"Acuracia": 0.427022430594 
+},
+{
+ "Dataset": "Vehicle",
+"Experimento": "Ac1_3",
+"Acuracia": 0.394845938375 
+},
+{
+ "Dataset": "Page-blocks",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Thyroid",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Penbased",
+"Experimento": "Ac1_3",
+"Acuracia": 0.216171042356 
+},
+{
+ "Dataset": "Satimage",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Optdigits",
+"Experimento": "Ac1_3",
+"Acuracia": 0.101423487544 
+},
+{
+ "Dataset": "Coil2000",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Saheart",
+"Experimento": "Ac1_3",
+"Acuracia": 0.651433857539 
+},
+{
+ "Dataset": "Automobile",
+"Experimento": "Ac1_3",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Australian",
+"Experimento": "Ac1_3",
+"Acuracia": 0.555072463768 
+},
+{
+ "Dataset": "Crx",
+"Experimento": "Ac1_3",
+"Acuracia": 0.546653053666 
+},
+{
+ "Dataset": "German",
+"Experimento": "Ac1_3",
+"Acuracia":            0.7 
+},
+{
+ "Dataset": "Iris",
+"Experimento": "Ac1_4",
+"Acuracia": 0.323626373626 
+},
+{
+ "Dataset": "Glass",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Wine",
+"Experimento": "Ac1_4",
+"Acuracia": 0.208496732026 
+},
+{
+ "Dataset": "Ecoli",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Balance",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Cleveland",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Pima",
+"Experimento": "Ac1_4",
+"Acuracia": 0.651081374766 
+},
+{
+ "Dataset": "Titanic",
+"Experimento": "Ac1_4",
+"Acuracia": 0.676966269025 
+},
+{
+ "Dataset": "Banana",
+"Experimento": "Ac1_4",
+"Acuracia": 0.551645582043 
+},
+{
+ "Dataset": "Winequality-Red",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Phoneme",
+"Experimento": "Ac1_4",
+"Acuracia": 0.710314637084 
+},
+{
+ "Dataset": "Segment",
+"Experimento": "Ac1_4",
+"Acuracia": 0.142857142857 
+},
+{
+ "Dataset": "Ring",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Twonorm",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Magic",
+"Experimento": "Ac1_4",
+"Acuracia": 0.648370136698 
+},
+{
+ "Dataset": "Texture",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Spambase",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Hayes-Roth",
+"Experimento": "Ac1_4",
+"Acuracia":        0.40625 
+},
+{
+ "Dataset": "Tae",
+"Experimento": "Ac1_4",
+"Acuracia": 0.344166666667 
+},
+{
+ "Dataset": "Haberman",
+"Experimento": "Ac1_4",
+"Acuracia": 0.735268817204 
+},
+{
+ "Dataset": "New-Thyroid",
+"Experimento": "Ac1_4",
+"Acuracia": 0.698051948052 
+},
+{
+ "Dataset": "Hepatitis",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Bupa",
+"Experimento": "Ac1_4",
+"Acuracia": 0.589259962049 
+},
+{
+ "Dataset": "Heart",
+"Experimento": "Ac1_4",
+"Acuracia": 0.555555555556 
+},
+{
+ "Dataset": "Wisconsin",
+"Experimento": "Ac1_4",
+"Acuracia": 0.650066143855 
+},
+{
+ "Dataset": "Ionosphere",
+"Experimento": "Ac1_4",
+"Acuracia": 0.641031746032 
+},
+{
+ "Dataset": "Spectfheart",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Dermatology",
+"Experimento": "Ac1_4",
+"Acuracia": 0.310253110253 
+},
+{
+ "Dataset": "Contraceptive",
+"Experimento": "Ac1_4",
+"Acuracia": 0.427022430594 
+},
+{
+ "Dataset": "Vehicle",
+"Experimento": "Ac1_4",
+"Acuracia": 0.257703081232 
+},
+{
+ "Dataset": "Page-blocks",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Thyroid",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Penbased",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Satimage",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Optdigits",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Coil2000",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Saheart",
+"Experimento": "Ac1_4",
+"Acuracia": 0.653654024052 
+},
+{
+ "Dataset": "Automobile",
+"Experimento": "Ac1_4",
+"Acuracia":              0 
+},
+{
+ "Dataset": "Australian",
+"Experimento": "Ac1_4",
+"Acuracia": 0.555072463768 
+},
+{
+ "Dataset": "Crx",
+"Experimento": "Ac1_4",
+"Acuracia": 0.546653053666 
+},
+{
+ "Dataset": "German",
+"Experimento": "Ac1_4",
+"Acuracia":            0.7 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        
+          
+        chart.xAxis
+  .rotateLabels(   -45)
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

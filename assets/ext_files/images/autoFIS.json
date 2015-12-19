@@ -1,0 +1,63 @@
+{
+    "name": "AutoFIS-Class",
+    "children": [{
+        "name": "Fuzzificação",
+        "children": [{
+            "name": "Triangular padrão",
+			"size": 938
+		},{
+            "name": "Triangular Tukey",
+			"size": 938
+        }]
+    }, {
+        "name": "Formulação",
+        "children": [{
+            "name": "Suporte",
+            "children": [{
+                "name": "Cardinalidade Relativa",
+                "size": 1983
+            }, {
+                "name": "Frequência Relativa",
+                "size": 2047
+            }]
+        }, 
+		{
+		 "name": "PCD",
+		 "size": 1983
+		} ,		
+		{
+             "name": "Overlapping",
+             "size": 1983
+            }]
+    }, {
+        "name": "Associação",
+        "children": [{
+            "name": "CD",
+            "size": 8833
+        }, {
+            "name": "PCD",
+            "size": 1732
+        }, {
+            "name": "Frequência máxima",
+            "size": 3623
+        }]
+    }, {
+        "name": "Agregação",
+        "children": [{
+            "name": "max",
+            "size": 4116
+        },{
+            "name": "WARLS(MQR)",
+            "size": 1732
+        },{
+            "name": "intMQR",
+            "size": 1732
+        }]
+    }, {
+        "name": "Decisão",
+        "children": [{
+            "name": "Maxima pertinência",
+            "size": 2105
+        }]
+    }]
+}

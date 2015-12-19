@@ -1,0 +1,418 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/nv.d3.min.css'>
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/d3.min.js' type='text/javascript'></script>
+    <script src='js/nv.d3.min.js' type='text/javascript'></script>
+    <script src='js/fisheye.js' type='text/javascript'></script>
+
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }
+    </style>
+
+  </head>
+  <body >
+
+    <div id = 'chart1e94695b6f1f' class = 'rChart nvd3'></div>
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart1e94695b6f1f()
+    });
+    function drawchart1e94695b6f1f(){
+      var opts = {
+ "dom": "chart1e94695b6f1f",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Regras",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart1e94695b6f1f"
+},
+        data = [
+ {
+ "Dataset": "appendicitis",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 1.547562508716
+},
+{
+ "Dataset": "australian",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 2.646174797384
+},
+{
+ "Dataset": "banana",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 1.098612288668
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": null
+},
+{
+ "Dataset": "crx",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 2.639057329615
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": null
+},
+{
+ "Dataset": "heart",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 2.631888840137
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 2.208274413523
+},
+{
+ "Dataset": "magic",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 1.481604540924
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras":  2.00148000021
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 1.193922468472
+},
+{
+ "Dataset": "pima",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 1.791759469228
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 1.974081026022
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 1.774952350912
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 2.360854001118
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Padr\u00E3o\u002DCard",
+"Regras": 2.424802725718
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "Tukey\u002DCard",
+"Regras":   1.4586150227
+},
+{
+ "Dataset": "australian",
+"Experimento": "Tukey\u002DCard",
+"Regras": 2.740840023925
+},
+{
+ "Dataset": "banana",
+"Experimento": "Tukey\u002DCard",
+"Regras":  1.38629436112
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Tukey\u002DCard",
+"Regras": 1.945910149055
+},
+{
+ "Dataset": "crx",
+"Experimento": "Tukey\u002DCard",
+"Regras": 2.687847493785
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Tukey\u002DCard",
+"Regras": null
+},
+{
+ "Dataset": "heart",
+"Experimento": "Tukey\u002DCard",
+"Regras": 2.687847493785
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "Tukey\u002DCard",
+"Regras": 2.476538400117
+},
+{
+ "Dataset": "magic",
+"Experimento": "Tukey\u002DCard",
+"Regras":  1.68639895357
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "Tukey\u002DCard",
+"Regras":  2.00148000021
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Tukey\u002DCard",
+"Regras": 1.609437912434
+},
+{
+ "Dataset": "pima",
+"Experimento": "Tukey\u002DCard",
+"Regras": 1.931521411603
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Tukey\u002DCard",
+"Regras": 2.312535423847
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Tukey\u002DCard",
+"Regras": 3.081909969795
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Tukey\u002DCard",
+"Regras": 2.360854001118
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Tukey\u002DCard",
+"Regras": 2.197224577336
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras":   1.4586150227
+},
+{
+ "Dataset": "australian",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 2.451005098112
+},
+{
+ "Dataset": "banana",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 1.098612288668
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": null
+},
+{
+ "Dataset": "crx",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 2.501435951739
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": null
+},
+{
+ "Dataset": "heart",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 2.525728644308
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 2.292534757141
+},
+{
+ "Dataset": "magic",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 1.435084525289
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras":  2.00148000021
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 1.163150809806
+},
+{
+ "Dataset": "pima",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 1.609437912434
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 1.887069649032
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 1.974081026022
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 2.360854001118
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Padr\u00E3o\u002DFreq",
+"Regras": 2.230014400159
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "Tukey\u002DFreq",
+"Regras":  1.30833281965
+},
+{
+ "Dataset": "australian",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 2.708050201102
+},
+{
+ "Dataset": "banana",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 1.223775431622
+},
+{
+ "Dataset": "bupa",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 1.667706820558
+},
+{
+ "Dataset": "crx",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 2.587764035228
+},
+{
+ "Dataset": "haberman",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 1.163150809806
+},
+{
+ "Dataset": "heart",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 2.549445170926
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 2.282382385677
+},
+{
+ "Dataset": "magic",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 1.481604540924
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "Tukey\u002DFreq",
+"Regras":  2.00148000021
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 1.435084525289
+},
+{
+ "Dataset": "pima",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 1.871802176902
+},
+{
+ "Dataset": "saheart",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 2.151762203259
+},
+{
+ "Dataset": "spambase",
+"Experimento": "Tukey\u002DFreq",
+"Regras":  3.11351530921
+},
+{
+ "Dataset": "titanic",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 2.360854001118
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "Tukey\u002DFreq",
+"Regras": 2.240709689276
+}
+]
+
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+
+
+        chart
+  .reduceXTicks(false)
+
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -45)
+
+
+
+        chart.yAxis
+  .axisLabel("Ln(regras)")
+  .width(    40)
+
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+      <div class="container-fluid">
+
+          <ul class="nav nav-tabs nav-justified">
+              <li class="active"><a href="#tt1" data-toggle="tab">Investigação empírica</a></li>
+              <li><a href="#tt2" data-toggle="tab">Extensão do modelo</a></li>
+              <li><a href="#tt3" data-toggle="tab">Comparação com outros modelos</a></li>
+          </ul>
+
+          <div class="tab-content">
+              <div class="tab-pane active" id="tt1">
+                  <br>
+                  <blockquote>
+                      Procura-se uma configuração competitiva para o modelo AutoFIS-Class,
+                      visando a futura comparação com os demais modelos (SFE).
+                  </blockquote>
+                  <ul class="nav nav-pills">
+                      <li><a href="#pp0" data-toggle="pill">Descrição</a></li>
+                      <li class="active"><a href="Exp1.html" target="_blank" data-toggle="pill">Exp1</a></li>
+                      <li><a href="Exp2.html" data-toggle="pill">Exp2</a></li>
+                      <li><a href="Exp3.html" data-toggle="pill">Exp3</a></li>
+                      <li><a href="Exp4.html" data-toggle="pill">Exp4</a></li>
+                      <li><a href="Exp5.html" data-toggle="pill">Exp5</a></li>
+                      <li><a href="Exp6.html" data-toggle="pill">Exp6</a></li>
+                      <li><a href="Exp7.html" data-toggle="pill">Exp7</a></li>
+                      <li><a href="Exp8.html" data-toggle="pill">Exp8</a></li>
+                      <li><a href="Exp9.html" data-toggle="pill">Exp9</a></li>
+                      <li><a href="#pp10" data-toggle="pill">Configurações Empíricas</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                      <div class="tab-pane fade" id="pp0">
+                          <div class="jumbotron">
+                            <h3>É um experimento sequencial</h3>
+                          </div>
+                          <img src="images/sequentialExperiment.png" alt="Sequencial" />
+                      </div>
+                      <div class="tab-pane" id="pp1">
+                          <iframe width="100%" height="400" src = 'Exp1.html'></iframe>
+                      </div>
+                      <div class="tab-pane" id="pp2">
+                            <div class="jumbotron">
+                              <h3>Operadores de Agregação</h3>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="pp3">
+                            <div class="jumbotron">
+                              <h3>Limiar do Filtro de Suporte</h3>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="pp4">
+                            <div class="jumbotron">
+                              <h3>Métodos de Associação</h3>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="pp5">
+                            <div class="jumbotron">
+                              <h3>Filtros de pertinência e Filtros de Suporte</h3>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="pp6">
+                            <div class="jumbotron">
+                              <h3>Numero de termos linguisticos</h3>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="pp7">
+                            <div class="jumbotron">
+                              <h3>Filtros PCD e Similaridade</h3>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="pp8">
+                            <div class="jumbotron">
+                              <h3>Tamanho das premissas</h3>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="pp9">
+                            <div class="jumbotron">
+                              <h3>Limiar do Filtro da Similaridade</h3>
+                            </div>
+                      </div>
+                      <div class="tab-pane" id="pp10">
+                            <div class="jumbotron">
+                              <h3>Configurações achadas</h3>
+                            </div>
+                            As configurações referenciais encontradas para os tipos de bases de dados são:
+                            <img src="images/empiricalConfigurations.png" class="img-thumbnail center-block" width="600" />
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane" id="tt2">
+                  Por causa do custo computacional ao acrescentar o numero de atributos nas bases de dados.
+                  Torna-se o algoritmo proposto nao ideal. O espirito do algoritmo e alem de ser deterministico que execute em um tempo razoavel.
+                  Por isso, e proposta a seguinte extensao do AutoFI-Class.<br>
+                  <img src="images/ideaBagFIS.png" class="img-thumbnail center-block" width="800"/>
+                  <br>
+                  <div class="jumbotron"> <h2>Em bases binárias</h2> </div>
+                  <img src="images/taxaBinBagFIS.png" class="thumbnail" width="320"/>
+                  <div class="jumbotron"> <h2>Em bases de múltiplas classes</h2> </div>
+                  <img src="images/taxaMultiBagFIS.png" class="thumbnail" width="500"/>
+              </div>
+              <div class="tab-pane" id="tt3">
+                  <div class="page-header">
+                    <h2> <small>Algoritmos a comparar</small></h2>
+                  </div>
+                  <div class="col-md-4">
+                      <p>Procedimento: 10k-folds fornecidos pelo <a href="#" data-toggle="popover" title="KEEL"
+                        data-content="Knowledge Extraction based on Evolutionary Learning">KEEL</a> (<a href="http://www.keel.es/" target="_blank">link</a>)</p>
+                      <p>Métricas: acurácia e número de regras</p>
+                      <p> <a href="#" data-toggle="popover" title="GRUPO1 - Referencia" data-content="A Fuzzy Association Rule-Based Classification Model for High-Dimensional Problems With Genetic Rule Selection and Lateral Tuning">GRUPO1 - Referencia</a> </p>
+                      <p> <a href="#" data-toggle="popover" title="GRUPO2 - Referencia" data-content="A Fuzzy Association Rule-Based Classification Model for High-Dimensional Problems With Genetic Rule Selection and Lateral Tuning">GRUPO2 - Referencia</a> </p>
+                  </div>
+                  <div class="list-group col-md-4"><a href="#" class="list-group-item active">GRUPO1</a>
+                      <a href="#" class="list-group-item">2SLAVE</a>
+                      <a href="#" class="list-group-item">FH-GBML</a>
+                      <a href="#" class="list-group-item">SGERD</a>
+                      <a href="#" class="list-group-item">FARC-HD</a>
+                  </div>
+                  <div class="list-group col-md-4"><a href="#" class="list-group-item active">GRUPO2</a>
+                      <a href="#" class="list-group-item">PCA.Ravi</a>
+                      <a href="#" class="list-group-item">GP.PITT</a>
+                      <a href="#" class="list-group-item">GCCL</a>
+                      <a href="#" class="list-group-item">FRBCS-GP</a>
+                      <a href="#" class="list-group-item">GPCOACH</a>
+                  </div>
+
+                  <div class="page-header col-md-12">
+                    <h2> <small>GRUPO1</small></h2>
+                  </div>
+                  <div class="col-md-4">  </div>
+                  <div class="col-md-4 center-block"> <p class="text-success bg-success">Acurácias</p> <br> <img src="images/g1FriedmanAc.png" class="thumbnail" width="400"/> </div>
+                  <div class="col-md-4"> <p class="text-success bg-success"> Número de regras</p> <br> <img src="images/g1FriedmanNr.png" class="thumbnail" width="400"/> </div>
+
+                  <div class="page-header col-md-12">
+                    <h2> <small>GRUPO2</small></h2>
+                  </div>
+                  <div class="col-md-4">  </div>
+                  <div class="col-md-4 center-block"> <p class="text-success bg-success">Acurácias</p> <br> <img src="images/g2FriedmanAc.png" class="thumbnail" width="400"/> </div>
+                  <div class="col-md-4"> <p class="text-success bg-success"> Número de regras</p> <br> <img src="images/g2FriedmanNr.png" class="thumbnail" width="400"/> </div>
+
+
+              </div>
+          </div>
+      </div>
+
+  <script>
+      $(document).ready(function(){
+    	$('[data-toggle="tooltip"]').tooltip();
+    	$('[data-toggle="popover"]').popover();
+        });
+  </script>
+  </body>
+</html>

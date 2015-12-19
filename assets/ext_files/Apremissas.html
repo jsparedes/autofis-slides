@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Premissas</a></li>
+    <li><a href="Aanalise.html">Exemplo de Análise</a></li>
+    <li><a href="Atabp1.html">Tamanho 1</a></li>
+    <li><a href="Atabp2.html">Tamanho 2</a></li>
+    <li><a href="Atabp3.html">Tamanho 3</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="col-md-3">
+      <p>Elas podem ter diferentes tamanhos como por exemplo 1, 2 ou 3.
+	  </p>
+
+	  <p>Analisando as t-normas para 2 premissas:</p>
+		<table class="table">
+			<thead>
+				<tr> <th>A<sub>11</sub></th> <th>A<sub>32</sub></th> <th>prod</th> <th>min</th> </tr>
+			</thead>
+			<tbody>
+				<tr>	<td>0.0200</td> <td>0.2500</td> <td>0.0050</td> <td>0.0200</td> </tr>
+				<tr>	<td>0.0050</td> <td>0.2000</td> <td>0.0010</td> <td>0.0050</td> </tr>
+				<tr>	<td>0.0200</td> <td>0.0300</td> <td>0.0006</td> <td>0.0200</td> </tr>
+				<tr>	<td>0.0030</td> <td>0.1000</td> <td>0.0003</td> <td>0.0030</td> </tr>
+				<tr>	<td>0.0350</td> <td>0.0000</td> <td>0.0000</td> <td>0.0000</td> </tr>
+				<tr>	<td>0.0120</td> <td>0.1000</td> <td>0.0012</td> <td>0.0120</td> </tr>
+			</tbody>
+		</table>
+    </div>
+	
+    <div class="col-md-3">
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#s1">Suporte</button>
+		<div id="s1" class="collapse off" >
+		Define-se uma tolerancia de &aacute;rea: 0.10 <br> <br>
+		<i><font color="blue">Cardinalidade Relativa</font></i> <br>
+		sum(A<sub>11</sub>)/6 < 0.10 &Implies; <font color="red">0.0158 < 0.10</font> <br>
+		sum(A<sub>32</sub>)/6 < 0.10 &Implies; 0.1166 < 0.10 <br>
+		sum(prod)/6 < 0.10 &Implies; <font color="red">0.0013 < 0.10</font> <br>
+		sum(min)/6 < 0.10   &Implies; <font color="red">0.0133 < 0.10</font> <br> <br>
+        <i><font color="blue">Frequ&ecirc;ncia Relativa</font></i> <br>
+		sum(A<sub>11</sub><sup>{0,1}</sup>) /6 < 0.10 &Implies; 6/6 < 0.10 <br>
+		sum(A<sub>32</sub><sup>{0,1}</sup>) /6 < 0.10 &Implies; 5/6 < 0.10 <br>
+		sum(prod<sup>{0,1}</sup>)/6 < 0.10 &Implies; 5/6 < 0.10 <br>
+		sum(min<sup>{0,1}</sup>)/6 < 0.10   &Implies; 5/6 < 0.10 <br>
+		</div>
+    </div>
+	
+    <div class="col-md-3"> 
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#s2">Filtro PCD</button>
+		<div id="s2" class="collapse off" >
+		Elimina&ccedil;&atilde;o das premissas que tem compatibilidade com todas as classes. Por exemplo:
+		<table class="table">
+			<thead>
+				<tr> <th></th> <th>C<sub>1</sub></th> <th>C<sub>2</sub></th> <th>C<sub>3</sub></th> </tr>
+			</thead>
+			<tbody>
+				<tr>	<td><font color="red">A</font><sub><font color="red">11</font></sub></td> <td>0.40</td> <td>0.30</td> <td>0.30</td>		</tr>
+				<tr>	<td>A<sub>12</sub></td> <td>0.70</td> <td>0.15</td> <td>0.15</td>		</tr>
+				<tr>	<td>A<sub>13</sub></td> <td>0.10</td> <td>0.80</td> <td>0.10</td>		</tr>
+				<tr>	<td><font color="red">A</font><sub><font color="red">21</font></td> <td>0.40</td> <td>0.35</td> <td>0.25</td>		</tr>
+				<tr>	<td>A<sub>22</sub></td> <td>0.02</td> <td>0.02</td> <td>0.96</td>		</tr>
+				<tr>	<td><font color="red">A</font><sub><font color="red">23</font></td> <td>0.35</td> <td>0.30</td> <td>0.35</td>		</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
+	
+    <div class="col-md-3"> 
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#s3">Similaridade</button>
+		<div id="s3" class="collapse off" >
+		O objetivo é reducir a ocorrência de premissas semelhantes ou iguais. <br> <br>
+		Define-se uma tolerancia de similaridade: 0.95 <br> <br>
+		<table class="table">
+			<thead>
+				<tr> <th> A<sub>71</sub>A<sub>52</sub> </th> <th> A<sub>11</sub>A<sub>34</sub> </th> <th> A<sub>53</sub>A<sub>12</sub> </th> <th> A<sub>41</sub>A<sub>52</sub> </th> </tr>
+			</thead>
+			<tbody>
+				<tr> 	<td>0.07</td> <td>0.07</td> <td>0.30</td> <td>0.07</td>		</tr>
+				<tr>	<td>0.23</td> <td>0.04</td> <td>0.15</td> <td>0.23</td>		</tr>
+				<tr>	<td>0.18</td> <td>0.17</td> <td>0.80</td> <td>0.18</td>		</tr>
+				<tr>	<td>0.15</td> <td>0.14</td> <td>0.35</td> <td>0.16</td>		</tr>
+				<tr>	<td>0.07</td> <td>0.06</td> <td>0.02</td> <td>0.07</td>		</tr>
+				<tr>	<td>0.03</td> <td>0.04</td> <td>0.30</td> <td>0.04</td>		</tr>
+			</tbody>
+		</table>
+		<b><font color="green">Similaridade: [1, 0.689, 0.293, 0.9733]</font></b> <br><br>
+		<b><font color="brown">Suporte: [0.73,  0.52,  1.92,  0.75] / 6</font></b> <br><br>
+		
+		<table class="table">
+			<thead>
+				<tr> <th>  </th> <th> A<sub>11</sub>A<sub>34</sub> </th> <th> A<sub>53</sub>A<sub>12</sub> </th> <th> A<sub>41</sub>A<sub>52</sub> </th> </tr>
+			</thead>
+			<tbody>
+				<tr> <th></th> 	<td>0.07</td> <td>0.30</td> <td>0.07</td>		</tr>
+				<tr> <th></th> 	<td>0.04</td> <td>0.15</td> <td>0.23</td>		</tr>
+				<tr> <th></th> 	<td>0.17</td> <td>0.80</td> <td>0.18</td>		</tr>
+				<tr> <th></th> 	<td>0.14</td> <td>0.35</td> <td>0.16</td>		</tr>
+				<tr> <th></th> 	<td>0.06</td> <td>0.02</td> <td>0.07</td>		</tr>
+				<tr> <th></th> 	<td>0.04</td> <td>0.30</td> <td>0.04</td>		</tr>
+			</tbody>
+		</table>
+		
+		</div>
+		
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

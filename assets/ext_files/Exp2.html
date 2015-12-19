@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exp2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+      <div class="container-fluid">
+          <div class="jumbotron"> <h4>Operadores de Agregação</h4>
+            <p></p>
+          </div>
+
+          <div class="col-md-5"> <img src="images/Exp2StartPoint.png" alt="" /> </div>
+          <div class="col-md-7"> <img src="images/Exp2AcNr.png" alt="" /> </div>
+
+          <div class="col-md-12">
+              <iframe width="900" height="450" frameborder="0" src = 'exp2ac.html' class="center-block"></iframe>
+          </div>
+
+          <div class="col-md-12">
+              <iframe width="900" height="450" frameborder="0" src = 'exp2nr.html' class="center-block"></iframe>
+          </div>
+
+          <div class="page-header">
+            <h1> <small>Teste de Friedman e Holm</small></h1>
+          </div>
+
+          <div class="col-md-4">  </div>
+          <div class="col-md-4 center-block"> <p class="text-success bg-success">Acurácias</p> <br> <img src="images/Exp2FriedmanAc.png" class="thumbnail" width="400"/> </div>
+          <div class="col-md-4"> <p class="text-success bg-success"> Número de regras</p> <br> <img src="images/Exp2FriedmanNr.png" class="thumbnail" width="400"/> </div>
+      </div>
+
+  <script>
+      $(document).ready(function(){
+    	$('[data-toggle="tooltip"]').tooltip();
+    	$('[data-toggle="popover"]').popover();
+        });
+  </script>
+  </body>
+</html>

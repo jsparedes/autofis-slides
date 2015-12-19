@@ -1,0 +1,418 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/nv.d3.min.css'>
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/d3.min.js' type='text/javascript'></script>
+    <script src='js/nv.d3.min.js' type='text/javascript'></script>
+    <script src='js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart37b4380f1a90' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart37b4380f1a90()
+    });
+    function drawchart37b4380f1a90(){  
+      var opts = {
+ "dom": "chart37b4380f1a90",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Regras",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart37b4380f1a90" 
+},
+        data = [
+ {
+ "Dataset": "balance",
+"Experimento": "Similaridade",
+"Regras": 3.214867803471 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "Similaridade",
+"Regras": 3.964615455547 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Similaridade",
+"Regras": 3.430756183904 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "Similaridade",
+"Regras": 3.852273001022 
+},
+{
+ "Dataset": "glass",
+"Experimento": "Similaridade",
+"Regras": 3.349904087275 
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "Similaridade",
+"Regras": 2.415913778301 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Similaridade",
+"Regras": 1.808288771179 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "Similaridade",
+"Regras": 1.945910149055 
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "Similaridade",
+"Regras": 2.906901059847 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Similaridade",
+"Regras":  2.87356463958 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "Similaridade",
+"Regras": 2.312535423847 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Similaridade",
+"Regras": 2.939161922066 
+},
+{
+ "Dataset": "vowel",
+"Experimento": "Similaridade",
+"Regras": 4.177459468933 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Similaridade",
+"Regras": 2.251291798606 
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "Similaridade",
+"Regras": 3.848017675452 
+},
+{
+ "Dataset": "yeast",
+"Experimento": "Similaridade",
+"Regras": 3.943521672488 
+},
+{
+ "Dataset": "balance",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.879198457298 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "PCD e Similaridade",
+"Regras":  3.47196645255 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.839078463509 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "PCD e Similaridade",
+"Regras": 3.660994250624 
+},
+{
+ "Dataset": "glass",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.624668592163 
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.251291798606 
+},
+{
+ "Dataset": "iris",
+"Experimento": "PCD e Similaridade",
+"Regras":  1.38629436112 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "PCD e Similaridade",
+"Regras": 1.987874348154 
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.890371757896 
+},
+{
+ "Dataset": "tae",
+"Experimento": "PCD e Similaridade",
+"Regras":  2.69462718077 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.580216829592 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.302585092994 
+},
+{
+ "Dataset": "vowel",
+"Experimento": "PCD e Similaridade",
+"Regras": null 
+},
+{
+ "Dataset": "wine",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.140066163496 
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "PCD e Similaridade",
+"Regras": 3.206803243634 
+},
+{
+ "Dataset": "yeast",
+"Experimento": "PCD e Similaridade",
+"Regras": 2.302585092994 
+},
+{
+ "Dataset": "balance",
+"Experimento": "Nenhum",
+"Regras": 3.214867803471 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "Nenhum",
+"Regras": 3.903990833731 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "Nenhum",
+"Regras": 3.424262654593 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "Nenhum",
+"Regras": 3.956996371071 
+},
+{
+ "Dataset": "glass",
+"Experimento": "Nenhum",
+"Regras": 3.353406717826 
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "Nenhum",
+"Regras": 2.415913778301 
+},
+{
+ "Dataset": "iris",
+"Experimento": "Nenhum",
+"Regras": 1.589235205117 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "Nenhum",
+"Regras": 1.987874348154 
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "Nenhum",
+"Regras": 2.928523523861 
+},
+{
+ "Dataset": "tae",
+"Experimento": "Nenhum",
+"Regras": 2.879198457298 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "Nenhum",
+"Regras": 2.557227311368 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "Nenhum",
+"Regras": 3.025291075796 
+},
+{
+ "Dataset": "vowel",
+"Experimento": "Nenhum",
+"Regras": 4.152613470346 
+},
+{
+ "Dataset": "wine",
+"Experimento": "Nenhum",
+"Regras": 2.282382385677 
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "Nenhum",
+"Regras":  3.85014760171 
+},
+{
+ "Dataset": "yeast",
+"Experimento": "Nenhum",
+"Regras": 3.912023005428 
+},
+{
+ "Dataset": "balance",
+"Experimento": "PCD",
+"Regras": 2.879198457298 
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "PCD",
+"Regras": 3.475067230229 
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "PCD",
+"Regras": 2.839078463509 
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "PCD",
+"Regras": 3.660994250624 
+},
+{
+ "Dataset": "glass",
+"Experimento": "PCD",
+"Regras": 2.624668592163 
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "PCD",
+"Regras": 2.251291798606 
+},
+{
+ "Dataset": "iris",
+"Experimento": "PCD",
+"Regras":  1.38629436112 
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "PCD",
+"Regras": 1.987874348154 
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "PCD",
+"Regras": 2.923161580719 
+},
+{
+ "Dataset": "tae",
+"Experimento": "PCD",
+"Regras":  2.69462718077 
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "PCD",
+"Regras":  2.77881927199 
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "PCD",
+"Regras": 2.282382385677 
+},
+{
+ "Dataset": "vowel",
+"Experimento": "PCD",
+"Regras": null 
+},
+{
+ "Dataset": "wine",
+"Experimento": "PCD",
+"Regras": 2.140066163496 
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "PCD",
+"Regras": 3.206803243634 
+},
+{
+ "Dataset": "yeast",
+"Experimento": "PCD",
+"Regras": 2.302585092994 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+          
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -45)
+
+        
+        
+        chart.yAxis
+  .axisLabel("Ln(regras)")
+  .width(    40)
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

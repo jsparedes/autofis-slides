@@ -1,0 +1,324 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/nv.d3.min.css'>
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/d3.min.js' type='text/javascript'></script>
+    <script src='js/nv.d3.min.js' type='text/javascript'></script>
+    <script src='js/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }
+    </style>
+
+  </head>
+  <body >
+
+    <div id = 'chart36b4337c364a' class = 'rChart nvd3'></div>
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart36b4337c364a()
+    });
+    function drawchart36b4337c364a(){
+      var opts = {
+ "dom": "chart36b4337c364a",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Acur\u00E1cia",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart36b4337c364a"
+},
+        data = [
+ {
+ "Dataset": "appendicitis",
+"Experimento": "0925",
+"Acur\u00E1cia":             88
+},
+{
+ "Dataset": "australian",
+"Experimento": "0925",
+"Acur\u00E1cia":   85.652173913
+},
+{
+ "Dataset": "banana",
+"Experimento": "0925",
+"Acur\u00E1cia":  60.0754716981
+},
+{
+ "Dataset": "bupa",
+"Experimento": "0925",
+"Acur\u00E1cia":   64.959067498
+},
+{
+ "Dataset": "crx",
+"Experimento": "0925",
+"Acur\u00E1cia":  86.1739408213
+},
+{
+ "Dataset": "haberman",
+"Experimento": "0925",
+"Acur\u00E1cia":  73.5268817204
+},
+{
+ "Dataset": "heart",
+"Experimento": "0925",
+"Acur\u00E1cia":  83.3333333333
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "0925",
+"Acur\u00E1cia":  80.3203463203
+},
+{
+ "Dataset": "magic",
+"Experimento": "0925",
+"Acur\u00E1cia":  77.3396424816
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "0925",
+"Acur\u00E1cia":  97.2674418605
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "0925",
+"Acur\u00E1cia":   71.909632368
+},
+{
+ "Dataset": "pima",
+"Experimento": "0925",
+"Acur\u00E1cia":  73.3243949033
+},
+{
+ "Dataset": "saheart",
+"Experimento": "0925",
+"Acur\u00E1cia":   71.216466235
+},
+{
+ "Dataset": "titanic",
+"Experimento": "0925",
+"Acur\u00E1cia":  77.6030440148
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "0925",
+"Acur\u00E1cia":  96.6470479172
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "0.950",
+"Acur\u00E1cia":  85.1818181818
+},
+{
+ "Dataset": "australian",
+"Experimento": "0.950",
+"Acur\u00E1cia":   85.652173913
+},
+{
+ "Dataset": "banana",
+"Experimento": "0.950",
+"Acur\u00E1cia":  60.0754716981
+},
+{
+ "Dataset": "bupa",
+"Experimento": "0.950",
+"Acur\u00E1cia":  65.8446733532
+},
+{
+ "Dataset": "crx",
+"Experimento": "0.950",
+"Acur\u00E1cia":  85.8608366035
+},
+{
+ "Dataset": "haberman",
+"Experimento": "0.950",
+"Acur\u00E1cia":  73.5268817204
+},
+{
+ "Dataset": "heart",
+"Experimento": "0.950",
+"Acur\u00E1cia":  82.2222222222
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "0.950",
+"Acur\u00E1cia":   82.658008658
+},
+{
+ "Dataset": "magic",
+"Experimento": "0.950",
+"Acur\u00E1cia":  79.5899053628
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "0.950",
+"Acur\u00E1cia":  97.2674418605
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "0.950",
+"Acur\u00E1cia":   72.131375368
+},
+{
+ "Dataset": "pima",
+"Experimento": "0.950",
+"Acur\u00E1cia":  73.8387927862
+},
+{
+ "Dataset": "saheart",
+"Experimento": "0.950",
+"Acur\u00E1cia":  72.0814061055
+},
+{
+ "Dataset": "titanic",
+"Experimento": "0.950",
+"Acur\u00E1cia":  77.6030440148
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "0.950",
+"Acur\u00E1cia":  96.7919754534
+},
+{
+ "Dataset": "appendicitis",
+"Experimento": "0.975",
+"Acur\u00E1cia":  86.0909090909
+},
+{
+ "Dataset": "australian",
+"Experimento": "0.975",
+"Acur\u00E1cia":  85.3623188406
+},
+{
+ "Dataset": "banana",
+"Experimento": "0.975",
+"Acur\u00E1cia":  60.0754716981
+},
+{
+ "Dataset": "bupa",
+"Experimento": "0.975",
+"Acur\u00E1cia":  65.8162103551
+},
+{
+ "Dataset": "crx",
+"Experimento": "0.975",
+"Acur\u00E1cia":  86.9105673317
+},
+{
+ "Dataset": "haberman",
+"Experimento": "0.975",
+"Acur\u00E1cia":  73.5268817204
+},
+{
+ "Dataset": "heart",
+"Experimento": "0.975",
+"Acur\u00E1cia":   82.962962963
+},
+{
+ "Dataset": "hepatitis",
+"Experimento": "0.975",
+"Acur\u00E1cia":  82.5064935065
+},
+{
+ "Dataset": "magic",
+"Experimento": "0.975",
+"Acur\u00E1cia":  80.0157728707
+},
+{
+ "Dataset": "monk-2",
+"Experimento": "0.975",
+"Acur\u00E1cia":  97.2674418605
+},
+{
+ "Dataset": "phoneme",
+"Experimento": "0.975",
+"Acur\u00E1cia":  72.2980078045
+},
+{
+ "Dataset": "pima",
+"Experimento": "0.975",
+"Acur\u00E1cia":  74.2301996249
+},
+{
+ "Dataset": "saheart",
+"Experimento": "0.975",
+"Acur\u00E1cia":  72.5208140611
+},
+{
+ "Dataset": "titanic",
+"Experimento": "0.975",
+"Acur\u00E1cia":  77.6030440148
+},
+{
+ "Dataset": "wisconsin",
+"Experimento": "0.975",
+"Acur\u00E1cia":   96.056232935
+}
+]
+
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+
+
+        chart
+  .reduceXTicks(false)
+
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -30)
+
+
+
+        chart.yAxis
+  .axisLabel("Acur\u00E1cia")
+  .width(    55)
+  .tickFormat( function(d) {return d3.format(',.2f')(d)} )
+
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,339 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/nv.d3.min.css'>
+    <script src='js/jquery.js' type='text/javascript'></script>
+    <script src='js/d3.min.js' type='text/javascript'></script>
+    <script src='js/nv.d3.min.js' type='text/javascript'></script>
+    <script src='js/fisheye.js' type='text/javascript'></script>
+
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }
+    </style>
+
+  </head>
+  <body >
+
+    <div id = 'chart10f03a9ad42' class = 'rChart nvd3'></div>
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart10f03a9ad42()
+    });
+    function drawchart10f03a9ad42(){
+      var opts = {
+ "dom": "chart10f03a9ad42",
+"width":    800,
+"height":    400,
+"x": "Dataset",
+"y": "Acur\u00E1cia",
+"group": "Experimento",
+"type": "multiBarChart",
+"id": "chart10f03a9ad42"
+},
+        data = [
+ {
+ "Dataset": "balance",
+"Experimento": "0925",
+"Acur\u00E1cia":  90.0813376646
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "0925",
+"Acur\u00E1cia":  58.5920864453
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "0925",
+"Acur\u00E1cia":  56.2851627137
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "0925",
+"Acur\u00E1cia":  75.5971479501
+},
+{
+ "Dataset": "glass",
+"Experimento": "0925",
+"Acur\u00E1cia":  54.7785620177
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "0925",
+"Acur\u00E1cia":         74.375
+},
+{
+ "Dataset": "iris",
+"Experimento": "0925",
+"Acur\u00E1cia":             96
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "0925",
+"Acur\u00E1cia":  89.8268398268
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "0925",
+"Acur\u00E1cia":  93.1284111077
+},
+{
+ "Dataset": "tae",
+"Experimento": "0925",
+"Acur\u00E1cia":          49.75
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "0925",
+"Acur\u00E1cia":  93.4027777778
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "0925",
+"Acur\u00E1cia":  60.5448179272
+},
+{
+ "Dataset": "vowel",
+"Experimento": "0925",
+"Acur\u00E1cia":  49.0909090909
+},
+{
+ "Dataset": "wine",
+"Experimento": "0925",
+"Acur\u00E1cia":  96.6013071895
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "0925",
+"Acur\u00E1cia":  58.0353773585
+},
+{
+ "Dataset": "yeast",
+"Experimento": "0925",
+"Acur\u00E1cia":  52.2945764557
+},
+{
+ "Dataset": "balance",
+"Experimento": "0.950",
+"Acur\u00E1cia":  90.0813376646
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "0.950",
+"Acur\u00E1cia":  59.6242650564
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "0.950",
+"Acur\u00E1cia":  56.4874057731
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "0.950",
+"Acur\u00E1cia":  75.5971479501
+},
+{
+ "Dataset": "glass",
+"Experimento": "0.950",
+"Acur\u00E1cia":  55.4935692327
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "0.950",
+"Acur\u00E1cia":         74.375
+},
+{
+ "Dataset": "iris",
+"Experimento": "0.950",
+"Acur\u00E1cia":  96.6666666667
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "0.950",
+"Acur\u00E1cia":   90.303030303
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "0.950",
+"Acur\u00E1cia":  93.5305048106
+},
+{
+ "Dataset": "tae",
+"Experimento": "0.950",
+"Acur\u00E1cia":  46.5416666667
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "0.950",
+"Acur\u00E1cia":  93.3055555556
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "0.950",
+"Acur\u00E1cia":  59.4593837535
+},
+{
+ "Dataset": "vowel",
+"Experimento": "0.950",
+"Acur\u00E1cia":  49.0909090909
+},
+{
+ "Dataset": "wine",
+"Experimento": "0.950",
+"Acur\u00E1cia":  94.9019607843
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "0.950",
+"Acur\u00E1cia":   58.786163522
+},
+{
+ "Dataset": "yeast",
+"Experimento": "0.950",
+"Acur\u00E1cia":  51.9549247234
+},
+{
+ "Dataset": "balance",
+"Experimento": "0.975",
+"Acur\u00E1cia":  90.0813376646
+},
+{
+ "Dataset": "cleveland",
+"Experimento": "0.975",
+"Acur\u00E1cia":  58.9469251549
+},
+{
+ "Dataset": "contraceptive",
+"Experimento": "0.975",
+"Acur\u00E1cia":    55.74140467
+},
+{
+ "Dataset": "ecoli",
+"Experimento": "0.975",
+"Acur\u00E1cia":   74.991087344
+},
+{
+ "Dataset": "glass",
+"Experimento": "0.975",
+"Acur\u00E1cia":  56.1400338792
+},
+{
+ "Dataset": "hayes-roth",
+"Experimento": "0.975",
+"Acur\u00E1cia":         73.125
+},
+{
+ "Dataset": "iris",
+"Experimento": "0.975",
+"Acur\u00E1cia":             96
+},
+{
+ "Dataset": "newthyroid",
+"Experimento": "0.975",
+"Acur\u00E1cia":  91.6666666667
+},
+{
+ "Dataset": "page-blocks",
+"Experimento": "0.975",
+"Acur\u00E1cia":  93.4573119471
+},
+{
+ "Dataset": "tae",
+"Experimento": "0.975",
+"Acur\u00E1cia":         49.125
+},
+{
+ "Dataset": "thyroid",
+"Experimento": "0.975",
+"Acur\u00E1cia":  92.9444444444
+},
+{
+ "Dataset": "vehicle",
+"Experimento": "0.975",
+"Acur\u00E1cia":  61.3697478992
+},
+{
+ "Dataset": "vowel",
+"Experimento": "0.975",
+"Acur\u00E1cia":  49.3939393939
+},
+{
+ "Dataset": "wine",
+"Experimento": "0.975",
+"Acur\u00E1cia":  97.1895424837
+},
+{
+ "Dataset": "winequality-red",
+"Experimento": "0.975",
+"Acur\u00E1cia":  58.7865566038
+},
+{
+ "Dataset": "yeast",
+"Experimento": "0.975",
+"Acur\u00E1cia":  53.9783239615
+}
+]
+
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+
+
+        chart
+  .reduceXTicks(false)
+
+        chart.xAxis
+  .axisLabel("Datasets")
+  .rotateLabels(   -30)
+
+
+
+        chart.yAxis
+  .axisLabel("Acur\u00E1cia")
+  .width(    55)
+  .tickFormat( function(d) {return d3.format(',.2f')(d)} )
+
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+
+    <script></script>
+  </body>
+</html>
