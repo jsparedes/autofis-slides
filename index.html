@@ -114,8 +114,24 @@
 <li>Gerar, em base a data de treinamento, um Sistema de Inferência automático cujo objetivo seja predizer novas amostras.</li>
 </ul>
 
-<p><img src="assets/img/PredictionMachineLearning.jpg" alt=""></p>
+<!--- ![](assets/img/PredictionMachineLearning.jpg) --->
 
+<div style='float:left;width:48%;' class='centered'>
+  <ul class = "build incremental">
+<li><div style='text-align: center;'>
+<img width='500' src='assets/img/PredictionMachineLearning.jpg' />
+</div></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul class = "build incremental">
+<li><div style='text-align: center;'>
+<img width='550' src='assets/img/classificationdataset.png' />
+</div></li>
+</ul>
+
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -142,42 +158,28 @@
     <h2>1.1 Foco: Acurácia e Interpretabilidade</h2>
   </hgroup>
   <article data-timings="">
-    
-<div style='float:left;width:48%;' class='centered'>
-  <ul class = "build incremental">
-<li>Bases de dados de <strong>Classificação</strong></li>
-<li><div style='text-align: center;'>
-<img width='650' src='assets/img/classificationdataset.png' />
-</div></li>
-</ul>
+    <p>Os Sistemas de Inferência Fuzzy (SIF) surgem como uma alternativa que une:</p>
 
-</div>
-<div style='float:right;width:48%;'>
-  <ul class = "build incremental">
-<li>Os Sistemas de Inferência Fuzzy (SIF) surgem como uma alternativa que une:
+<ul class = "build incremental">
+<li>Capacidade de interpretação a nível linguístico
 
 <ul>
-<li>capacidade de interpretação a nível linguístico</li>
-<li>acurácia.</li>
+<li>\[ \textbf{$Regra_{r}:$}:\,''Se \, X_{1} \, é \, A_{l1}, X_{2} \, é \, A_{l2},...,
+X_{J} \, é \, A_{lJ} \quad \textit{então} \quad \mathbf{x}_{i} \, é \, Classe \,k'' \]</li>
 </ul></li>
+<li>Acurácia.</li>
 </ul>
 
-</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-7" style="background:;">
   <hgroup>
-    <h3>Regras Fuzzy</h3>
+    <h3>Sistemas de Inferência Fuzzy</h3>
   </hgroup>
   <article data-timings="">
-    <p>\[
-\textbf{$Regra_{r}$}: ''Se \, X_{1} \, é \, A_{l1}, X_{2} \, é \, A_{l2},...,
-X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
-\]</p>
-
-<!--- >* ![interpretability](assets/img/interpretability-FRBSs.png)  --->
+    <iframe width="800" height="400" src = 'assets/ext_files/angEvolutionaryEvolutive.html'></iframe>
 
   </article>
   <!-- Presenter Notes -->
@@ -185,27 +187,16 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
 
 <slide class="" id="slide-8" style="background:;">
   <hgroup>
-    <h3>Sistemas de Inferência Fuzzy</h3>
+    <h3>Sistemas de Inferência Fuzzy - Algoritmos Evolucionários</h3>
   </hgroup>
   <article data-timings="">
-    <iframe width="800" height="400" src = 'assets/ext_files/angEvolutionary.html'></iframe>
+    <iframe width="800" height="400" src = 'assets/ext_files/Evolutionary1.html'></iframe>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-9" style="background:;">
-  <hgroup>
-    <h3>Sistemas de Inferência Fuzzy - Algoritmos Evolucionários</h3>
-  </hgroup>
-  <article data-timings="">
-    <iframe width="800" height="360" src = 'assets/ext_files/Evolutionary1.html'></iframe>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-10" style="background:;">
   <hgroup>
     <h3>Sistemas de Inferência Fuzzy - Evolutivos</h3>
   </hgroup>
@@ -216,9 +207,56 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h3>Pontos Negativos</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><br>
+<font size="5" color="green"><b>Nos Sistemas Fuzzy Evolucionários</b></font></p>
+
+<ul class = "build incremental">
+<li> É o seu alto custo computacional e o grande número de parâmetros adicionados em decorrência do uso de um Algoritmo Evolucionário.</li>
+</ul>
+
+<p><br>
+<font size="5" color="green"><b>Nos Sistemas Fuzzy Evolutivos</b></font></p>
+
+<ul class = "build incremental">
+<li> Ao não presumir uma alocação inicial e fixa para as funções de pertinência, torna as regras dificilmente interpretáveis.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <slide class="" id="slide-11" style="background:;">
   <hgroup>
-    <h2>1.2 Modelo AutoFIS</h2>
+    <h2>1.2 Objetivos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br>
+<font size="5" color="green"><b>Objetivo Primário</b></font></p>
+
+<ul class = "build incremental">
+<li>Foi a proposição de um novo sintetizador automático genérico de SIF para Classificação.</li>
+</ul>
+
+<p><br>
+<font size="5" color="green"><b>Objetivos Secundários</b></font></p>
+
+<ul class = "build incremental">
+<li>Analisar as características do modelo proposto AutoFIS</li>
+<li>Comparar os resultados do modelo AutoFIS com SFEs.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>1.3 Modelo AutoFIS</h2>
   </hgroup>
   <article data-timings="">
     <h3>Procura-se:</h3>
@@ -246,7 +284,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue dark" id="slide-12" style="background:;">
+<slide class="segue dark" id="slide-13" style="background:;">
   <hgroup>
     <h2>2. Etapas do modelo AutoFIS</h2>
   </hgroup>
@@ -256,7 +294,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class1" id="slide-13" style="background:;">
+<slide class="class1" id="slide-14" style="background:;">
   <article data-timings="">
     <!--- convert -density 400 diagramSFE.ps -resize 75% diagramSFE.png --->
 
@@ -266,7 +304,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class1" id="slide-14" style="background:;">
+<slide class="class1" id="slide-15" style="background:;">
   <hgroup>
     <h2>Exemplo de Aplição das etapas do modelo</h2>
   </hgroup>
@@ -277,7 +315,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-15" style="background:;">
+<slide class="" id="slide-16" style="background:;">
   <hgroup>
     <h2>2.2 Fuzzificação</h2>
   </hgroup>
@@ -291,7 +329,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-16" style="background:;">
+<slide class="" id="slide-17" style="background:;">
   <hgroup>
     <h2>2.2 Fuzzificação - Considerações</h2>
   </hgroup>
@@ -304,7 +342,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-17" style="background:;">
+<slide class="" id="slide-18" style="background:;">
   <hgroup>
     <h2>2.2 Fuzzificação - Considerações</h2>
   </hgroup>
@@ -319,20 +357,24 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-18" style="background:;">
+<slide class="" id="slide-19" style="background:;">
   <hgroup>
     <h2>Negação</h2>
   </hgroup>
   <article data-timings="">
-    <iframe width="700" height="300" src = 'assets/ext_files/negNCat.html'></iframe>
+    <p><section class="slide"></p>
 
-<p>jk</p>
+<div>
+<iframe width="700" height="300" src = 'assets/ext_files/negNCat.html'></iframe>
+</div>
+
+<p></section></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-19" style="background:;">
+<slide class="" id="slide-20" style="background:;">
   <hgroup>
     <h2>2.3 Formulação</h2>
   </hgroup>
@@ -345,7 +387,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class1" id="slide-20" style="background:;">
+<slide class="class1" id="slide-21" style="background:;">
   <hgroup>
     <h2>Total do configurações</h2>
   </hgroup>
@@ -356,7 +398,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue dark" id="slide-21" style="background:;">
+<slide class="segue dark" id="slide-22" style="background:;">
   <hgroup>
     <h2>3. Experimentos &amp; Resultados</h2>
   </hgroup>
@@ -366,7 +408,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-22" style="background:;">
+<slide class="" id="slide-23" style="background:;">
   <hgroup>
     <h2>3.1 Bases de dados:</h2>
   </hgroup>
@@ -377,7 +419,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-23" style="background:;">
+<slide class="" id="slide-24" style="background:;">
   <hgroup>
     <h2>3.2 Estudo de casos</h2>
   </hgroup>
@@ -388,7 +430,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue dark" id="slide-24" style="background:;">
+<slide class="segue dark" id="slide-25" style="background:;">
   <hgroup>
     <h2>4. Conclusões</h2>
   </hgroup>
@@ -398,14 +440,26 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-25" style="background:;">
+<slide class="" id="slide-26" style="background:;">
   <hgroup>
     <h2>Conclusões</h2>
   </hgroup>
   <article data-timings="">
-    <ul class = "build incremental">
+    <p><br></p>
+
+<ul class = "build incremental">
 <li>Foi gerada uma nova metodologia para a geração automática de Sistemas de Inferência Fuzzy.</li>
+</ul>
+
+<p><br></p>
+
+<ul class = "build incremental">
 <li>As bases de regras geradas foram competitivas sem uso de algum Algoritmo Evolucionário, sua compactação foi apresentada na comparação com os outros Algoritmos Evolucionários.</li>
+</ul>
+
+<p><br></p>
+
+<ul class = "build incremental">
 <li>Nos experimentos obteve o segundo melhor resultado em termos de acurácia no Grupo 1 e o primeiro lugar no Grupo 2.</li>
 </ul>
 
@@ -413,7 +467,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue dark" id="slide-26" style="background:;">
+<slide class="segue dark" id="slide-27" style="background:;">
   <hgroup>
     <h2>5. Trabalhos Futuros</h2>
   </hgroup>
@@ -423,7 +477,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-27" style="background:;">
+<slide class="" id="slide-28" style="background:;">
   <hgroup>
     <h2>Trabalhos Futuros</h2>
   </hgroup>
@@ -438,7 +492,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-28" style="background:;">
+<slide class="" id="slide-29" style="background:;">
   <hgroup>
     <h2>Agradecimentos</h2>
   </hgroup>
@@ -456,14 +510,14 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-29" style="background:;">
+<slide class="" id="slide-30" style="background:;">
   <article data-timings="">
     <p><br><br></p>
 
 <p style="text-align:center">
 <font size="12" color="green"> <b>Obrigado pela atenção</b> </font>
 <br><br><br>
-<b>Contacto:</b>
+<b>Contato:</b>
 <br><br>
 <b>[jparedes, adriano, 
 <a href="http://www.ele.puc-rio.br/dee_equipes.php?strSecao=vejamais&nrsequsu=5&quadro=1">marley</a>,
@@ -527,61 +581,61 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Regras Fuzzy'>
+        data-slide=7 title='Sistemas de Inferência Fuzzy'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Sistemas de Inferência Fuzzy'>
+        data-slide=8 title='Sistemas de Inferência Fuzzy - Algoritmos Evolucionários'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Sistemas de Inferência Fuzzy - Algoritmos Evolucionários'>
+        data-slide=9 title='Sistemas de Inferência Fuzzy - Evolutivos'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='Sistemas de Inferência Fuzzy - Evolutivos'>
+        data-slide=10 title='Pontos Negativos'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='1.2 Modelo AutoFIS'>
+        data-slide=11 title='1.2 Objetivos'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='2. Etapas do modelo AutoFIS'>
+        data-slide=12 title='1.3 Modelo AutoFIS'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='NA'>
+        data-slide=13 title='2. Etapas do modelo AutoFIS'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Exemplo de Aplição das etapas do modelo'>
+        data-slide=14 title='NA'>
          14
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title='2.2 Fuzzificação'>
+        data-slide=15 title='Exemplo de Aplição das etapas do modelo'>
          15
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title='2.2 Fuzzificação - Considerações'>
+        data-slide=16 title='2.2 Fuzzificação'>
          16
       </a>
     </li>
@@ -593,74 +647,80 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='Negação'>
+        data-slide=18 title='2.2 Fuzzificação - Considerações'>
          18
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=19 title='2.3 Formulação'>
+        data-slide=19 title='Negação'>
          19
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title='Total do configurações'>
+        data-slide=20 title='2.3 Formulação'>
          20
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title='3. Experimentos &amp; Resultados'>
+        data-slide=21 title='Total do configurações'>
          21
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='3.1 Bases de dados:'>
+        data-slide=22 title='3. Experimentos &amp; Resultados'>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='3.2 Estudo de casos'>
+        data-slide=23 title='3.1 Bases de dados:'>
          23
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='4. Conclusões'>
+        data-slide=24 title='3.2 Estudo de casos'>
          24
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=25 title='Conclusões'>
+        data-slide=25 title='4. Conclusões'>
          25
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=26 title='5. Trabalhos Futuros'>
+        data-slide=26 title='Conclusões'>
          26
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=27 title='Trabalhos Futuros'>
+        data-slide=27 title='5. Trabalhos Futuros'>
          27
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=28 title='Agradecimentos'>
+        data-slide=28 title='Trabalhos Futuros'>
          28
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=29 title='NA'>
+        data-slide=29 title='Agradecimentos'>
          29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='NA'>
+         30
       </a>
     </li>
   </ul>
