@@ -26,7 +26,7 @@
 		 "size": 1983
 		} ,		
 		{
-             "name": "Overlapping",
+             "name": "Similaridade",
              "size": 1983
             }]
     }, {
@@ -35,7 +35,7 @@
             "name": "CD",
             "size": 8833
         }, {
-            "name": "PCD",
+            "name": "MQR",
             "size": 1732
         }, {
             "name": "Frequência máxima",
@@ -47,7 +47,7 @@
             "name": "max",
             "size": 4116
         },{
-            "name": "WARLS(MQR)",
+            "name": "MQR",
             "size": 1732
         },{
             "name": "intMQR",
@@ -56,7 +56,7 @@
     }, {
         "name": "Decisão",
         "children": [{
-            "name": "Maxima pertinência",
+            "name": "Máxima pertinência",
             "size": 2105
         }]
     }]

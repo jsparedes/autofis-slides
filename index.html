@@ -108,10 +108,10 @@
     <h2>Classificação</h2>
   </hgroup>
   <article data-timings="">
-    <p><strong>Que se procura em classificação?</strong></p>
+    <p><strong>O que se procura na Classificação?</strong></p>
 
 <ul class = "build incremental">
-<li>Gerar, em base a data de treinamento, um sistema de inferencia automatico cujo objetivo sea predizer novas amostras.</li>
+<li>Gerar, em base a data de treinamento, um Sistema de Inferência automático cujo objetivo seja predizer novas amostras.</li>
 </ul>
 
 <p><img src="assets/img/PredictionMachineLearning.jpg" alt=""></p>
@@ -145,7 +145,7 @@
     
 <div style='float:left;width:48%;' class='centered'>
   <ul class = "build incremental">
-<li>Bases de dados de <strong>Clasificação</strong></li>
+<li>Bases de dados de <strong>Classificação</strong></li>
 <li><div style='text-align: center;'>
 <img width='650' src='assets/img/classificationdataset.png' />
 </div></li>
@@ -177,6 +177,8 @@
 X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
 \]</p>
 
+<!--- >* ![interpretability](assets/img/interpretability-FRBSs.png)  --->
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -197,7 +199,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
     <h3>Sistemas de Inferência Fuzzy - Algoritmos Evolucionários</h3>
   </hgroup>
   <article data-timings="">
-    <iframe width="800" height="400" src = 'assets/ext_files/Evolutionary1.html'></iframe>
+    <iframe width="800" height="360" src = 'assets/ext_files/Evolutionary1.html'></iframe>
 
   </article>
   <!-- Presenter Notes -->
@@ -281,19 +283,8 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   </hgroup>
   <article data-timings="">
     <ul class = "build incremental">
-<li>Mapeamento a graus de pertinência através das funções de pertinência.</li>
-<li>Para tanto, faz-se necessário definir os termos linguístico relacionados a cada um dos atributos.Considerações do modelo AutoFIS-Class:
-
-<ul>
-<li>Número de conjuntos fuzzy: 3, 5 ou 7.</li>
-<li>Formato da função de pertinência - triangular:
-
-<ul>
-<li>Padrão (uniformemente particionada)</li>
-<li>Tukey</li>
-</ul></li>
-<li>Binarização dos atributos categóricos.</li>
-</ul></li>
+<li><p>Mapeamento a graus de pertinência através das funções de pertinência.</p></li>
+<li><p><img src="assets/img/fuzzification.jpg" alt="fuzzification"></p></li>
 </ul>
 
   </article>
@@ -302,10 +293,10 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
 
 <slide class="" id="slide-16" style="background:;">
   <hgroup>
-    <h2>2.2 Fuzzificação</h2>
+    <h2>2.2 Fuzzificação - Considerações</h2>
   </hgroup>
   <article data-timings="">
-    <p>Formatos triangulares:</p>
+    <p>Formatos triangulares (Padrão e Tukey) com 3, 5 ou 7 termos linguísticos.</p>
 
 <iframe width="800" height="400" src = 'assets/ext_files/tukey_normal.html'></iframe>
 
@@ -315,7 +306,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
 
 <slide class="" id="slide-17" style="background:;">
   <hgroup>
-    <h2>2.2 Fuzzificação</h2>
+    <h2>2.2 Fuzzificação - Considerações</h2>
   </hgroup>
   <article data-timings="">
     <p>Binarização dos atributos categóricos</p>
@@ -414,8 +405,8 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <article data-timings="">
     <ul class = "build incremental">
 <li>Foi gerada uma nova metodologia para a geração automática de Sistemas de Inferência Fuzzy.</li>
-<li>Nos experimentos obteve o segundo melhor resultado em termos de acurácia</li>
-<li>Nos experimentos obteve o melhor resultado em termos de compactação da base de regras.</li>
+<li>As bases de regras geradas foram competitivas sem uso de algum Algoritmo Evolucionário, sua compactação foi apresentada na comparação com os outros Algoritmos Evolucionários.</li>
+<li>Nos experimentos obteve o segundo melhor resultado em termos de acurácia no Grupo 1 e o primeiro lugar no Grupo 2.</li>
 </ul>
 
   </article>
@@ -439,7 +430,7 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
   <article data-timings="">
     <ul class = "build incremental">
 <li>Gerar premisas maiores, usando principios do algoritmo Wang &amp; Mendel.</li>
-<li>Extensão do modelo com uso aletoriedad de classificadores tipo Random Forest para gerar diversidade de classificadores</li>
+<li>Extensão do modelo com uso aletoriedad na estrutura dos classificadores, como por exemplo em <em>Random Forest</em> para gerar diversidade de classificadores.</li>
 <li><img src="assets/img/diversidadAutoFIS.png" alt="diversidad"></li>
 </ul>
 
@@ -590,13 +581,13 @@ X_{J} \, é \, A_{lJ} \quad então \quad \mathbf{x}_{i} \, é \, classe \,k''
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title='2.2 Fuzzificação'>
+        data-slide=16 title='2.2 Fuzzificação - Considerações'>
          16
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=17 title='2.2 Fuzzificação'>
+        data-slide=17 title='2.2 Fuzzificação - Considerações'>
          17
       </a>
     </li>
